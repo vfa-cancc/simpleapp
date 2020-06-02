@@ -14,7 +14,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        /// Config root window
+        self.configureWindow()
         return true
+    }
+    
+    private func configureWindow() {
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        AppRouter.shared.openLogin()
+        self.window?.backgroundColor = UIColor.white
+        self.window?.makeKeyAndVisible()
     }
 }

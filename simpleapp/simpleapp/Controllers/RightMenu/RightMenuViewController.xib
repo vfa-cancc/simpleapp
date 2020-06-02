@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RightMenuViewController" customModule="simpleapp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPZ-cc-i4P">
+                    <rect key="frame" x="79" y="0.0" width="335" height="736"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="65" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fOz-hO-oyR">
+                            <rect key="frame" x="0.0" y="0.0" width="335" height="736"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="fOz-hO-oyR" firstAttribute="leading" secondItem="JPZ-cc-i4P" secondAttribute="leading" id="L8H-VB-muS"/>
+                        <constraint firstItem="fOz-hO-oyR" firstAttribute="top" secondItem="JPZ-cc-i4P" secondAttribute="top" id="UWS-OS-Qmy"/>
+                        <constraint firstAttribute="bottom" secondItem="fOz-hO-oyR" secondAttribute="bottom" id="feY-33-3Pj"/>
+                        <constraint firstAttribute="trailing" secondItem="fOz-hO-oyR" secondAttribute="trailing" id="zQJ-s9-bYg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="JPZ-cc-i4P" secondAttribute="bottom" id="CHP-LD-gXd"/>
+                <constraint firstItem="JPZ-cc-i4P" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="2.428:3" id="MVj-n0-m5N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="JPZ-cc-i4P" secondAttribute="trailing" id="aS1-N2-1g3"/>
+                <constraint firstItem="JPZ-cc-i4P" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="n6z-5a-cZU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="128"/>
+        </view>
+    </objects>
+</document>

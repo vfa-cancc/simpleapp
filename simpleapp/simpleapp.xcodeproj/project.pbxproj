@@ -7,6 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		485F2716248693F1008E1231 /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2714248693F1008E1231 /* RegistUserViewController.swift */; };
+		485F2717248693F1008E1231 /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2714248693F1008E1231 /* RegistUserViewController.swift */; };
+		485F2718248693F1008E1231 /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2714248693F1008E1231 /* RegistUserViewController.swift */; };
+		485F2719248693F1008E1231 /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2715248693F1008E1231 /* RegistUserViewController.xib */; };
+		485F271A248693F1008E1231 /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2715248693F1008E1231 /* RegistUserViewController.xib */; };
+		485F271B248693F1008E1231 /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2715248693F1008E1231 /* RegistUserViewController.xib */; };
+		485F271D24869646008E1231 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F271C24869646008E1231 /* BaseViewController.swift */; };
+		485F271E24869646008E1231 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F271C24869646008E1231 /* BaseViewController.swift */; };
+		485F271F24869646008E1231 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F271C24869646008E1231 /* BaseViewController.swift */; };
+		485F2724248696E2008E1231 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2722248696E2008E1231 /* LeftMenuViewController.swift */; };
+		485F2725248696E2008E1231 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2722248696E2008E1231 /* LeftMenuViewController.swift */; };
+		485F2726248696E2008E1231 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2722248696E2008E1231 /* LeftMenuViewController.swift */; };
+		485F2727248696E2008E1231 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2723248696E2008E1231 /* LeftMenuViewController.xib */; };
+		485F2728248696E2008E1231 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2723248696E2008E1231 /* LeftMenuViewController.xib */; };
+		485F2729248696E2008E1231 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2723248696E2008E1231 /* LeftMenuViewController.xib */; };
+		485F272C248696F5008E1231 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F272A248696F5008E1231 /* RightMenuViewController.swift */; };
+		485F272D248696F5008E1231 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F272A248696F5008E1231 /* RightMenuViewController.swift */; };
+		485F272E248696F5008E1231 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F272A248696F5008E1231 /* RightMenuViewController.swift */; };
+		485F272F248696F5008E1231 /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F272B248696F5008E1231 /* RightMenuViewController.xib */; };
+		485F2730248696F5008E1231 /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F272B248696F5008E1231 /* RightMenuViewController.xib */; };
+		485F2731248696F5008E1231 /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F272B248696F5008E1231 /* RightMenuViewController.xib */; };
 		48A1E8AE2483A1A300E7ACE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8AD2483A1A300E7ACE7 /* AppDelegate.swift */; };
 		48A1E8B72483A1A500E7ACE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8B62483A1A500E7ACE7 /* Assets.xcassets */; };
 		48A1E8BA2483A1A500E7ACE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8B82483A1A500E7ACE7 /* LaunchScreen.storyboard */; };
@@ -24,12 +45,6 @@
 		48A1E8F62483F7E700E7ACE7 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */; };
 		48A1E8F72483F7E700E7ACE7 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */; };
 		48A1E8F82483F7E700E7ACE7 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */; };
-		48A1E8FB2483F82E00E7ACE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F92483F82E00E7ACE7 /* BaseViewController.swift */; };
-		48A1E8FC2483F82E00E7ACE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F92483F82E00E7ACE7 /* BaseViewController.swift */; };
-		48A1E8FD2483F82E00E7ACE7 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F92483F82E00E7ACE7 /* BaseViewController.swift */; };
-		48A1E8FE2483F82E00E7ACE7 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8FA2483F82E00E7ACE7 /* BaseViewController.xib */; };
-		48A1E8FF2483F82E00E7ACE7 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8FA2483F82E00E7ACE7 /* BaseViewController.xib */; };
-		48A1E9002483F82E00E7ACE7 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8FA2483F82E00E7ACE7 /* BaseViewController.xib */; };
 		48A1E9032483F83C00E7ACE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */; };
 		48A1E9042483F83C00E7ACE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */; };
 		48A1E9052483F83C00E7ACE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */; };
@@ -62,6 +77,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		485F2714248693F1008E1231 /* RegistUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistUserViewController.swift; sourceTree = "<group>"; };
+		485F2715248693F1008E1231 /* RegistUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistUserViewController.xib; sourceTree = "<group>"; };
+		485F271C24869646008E1231 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		485F2722248696E2008E1231 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		485F2723248696E2008E1231 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
+		485F272A248696F5008E1231 /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		485F272B248696F5008E1231 /* RightMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightMenuViewController.xib; sourceTree = "<group>"; };
 		48A1E8AA2483A1A300E7ACE7 /* simpleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A1E8AD2483A1A300E7ACE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A1E8B62483A1A500E7ACE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -77,8 +99,6 @@
 		48A1E8E82483AB7200E7ACE7 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		48A1E8EF2483ABA600E7ACE7 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
-		48A1E8F92483F82E00E7ACE7 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		48A1E8FA2483F82E00E7ACE7 /* BaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		48A1E9022483F83C00E7ACE7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		48A1E90A2483F89A00E7ACE7 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +130,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		485F2713248693DE008E1231 /* RegistUser */ = {
+			isa = PBXGroup;
+			children = (
+				485F2714248693F1008E1231 /* RegistUserViewController.swift */,
+				485F2715248693F1008E1231 /* RegistUserViewController.xib */,
+			);
+			path = RegistUser;
+			sourceTree = "<group>";
+		};
+		485F27202486968F008E1231 /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				485F2722248696E2008E1231 /* LeftMenuViewController.swift */,
+				485F2723248696E2008E1231 /* LeftMenuViewController.xib */,
+			);
+			path = LeftMenu;
+			sourceTree = "<group>";
+		};
+		485F2721248696AE008E1231 /* RightMenu */ = {
+			isa = PBXGroup;
+			children = (
+				485F272A248696F5008E1231 /* RightMenuViewController.swift */,
+				485F272B248696F5008E1231 /* RightMenuViewController.xib */,
+			);
+			path = RightMenu;
+			sourceTree = "<group>";
+		};
 		48A1E8A12483A1A300E7ACE7 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +222,9 @@
 		48A1E8DE2483A75800E7ACE7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				485F2721248696AE008E1231 /* RightMenu */,
+				485F27202486968F008E1231 /* LeftMenu */,
+				485F2713248693DE008E1231 /* RegistUser */,
 				48A1E8F42483AF6900E7ACE7 /* Base */,
 				48A1E8F32483AF6200E7ACE7 /* Home */,
 				48A1E9092483F88500E7ACE7 /* Movie */,
@@ -258,8 +308,7 @@
 		48A1E8F42483AF6900E7ACE7 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				48A1E8F92483F82E00E7ACE7 /* BaseViewController.swift */,
-				48A1E8FA2483F82E00E7ACE7 /* BaseViewController.xib */,
+				485F271C24869646008E1231 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -378,10 +427,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A1E8BA2483A1A500E7ACE7 /* LaunchScreen.storyboard in Resources */,
-				48A1E8FE2483F82E00E7ACE7 /* BaseViewController.xib in Resources */,
 				48A1E9062483F83C00E7ACE7 /* HomeViewController.xib in Resources */,
 				48A1E90F2483F89A00E7ACE7 /* MovieViewController.xib in Resources */,
+				485F2719248693F1008E1231 /* RegistUserViewController.xib in Resources */,
 				48A1E8B72483A1A500E7ACE7 /* Assets.xcassets in Resources */,
+				485F2727248696E2008E1231 /* LeftMenuViewController.xib in Resources */,
+				485F272F248696F5008E1231 /* RightMenuViewController.xib in Resources */,
 				48A1E8EC2483AB7200E7ACE7 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -391,9 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A1E8ED2483AB7200E7ACE7 /* LoginViewController.xib in Resources */,
-				48A1E8FF2483F82E00E7ACE7 /* BaseViewController.xib in Resources */,
 				48A1E9072483F83C00E7ACE7 /* HomeViewController.xib in Resources */,
 				48A1E9102483F89A00E7ACE7 /* MovieViewController.xib in Resources */,
+				485F2728248696E2008E1231 /* LeftMenuViewController.xib in Resources */,
+				485F2730248696F5008E1231 /* RightMenuViewController.xib in Resources */,
+				485F271A248693F1008E1231 /* RegistUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,9 +455,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A1E8EE2483AB7200E7ACE7 /* LoginViewController.xib in Resources */,
-				48A1E9002483F82E00E7ACE7 /* BaseViewController.xib in Resources */,
 				48A1E9082483F83C00E7ACE7 /* HomeViewController.xib in Resources */,
 				48A1E9112483F89A00E7ACE7 /* MovieViewController.xib in Resources */,
+				485F2729248696E2008E1231 /* LeftMenuViewController.xib in Resources */,
+				485F2731248696F5008E1231 /* RightMenuViewController.xib in Resources */,
+				485F271B248693F1008E1231 /* RegistUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,11 +470,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E8FB2483F82E00E7ACE7 /* BaseViewController.swift in Sources */,
 				48A1E90C2483F89A00E7ACE7 /* MovieViewController.swift in Sources */,
 				48A1E8F62483F7E700E7ACE7 /* MainTabbar.swift in Sources */,
 				48A1E8E92483AB7200E7ACE7 /* LoginViewController.swift in Sources */,
 				48A1E8AE2483A1A300E7ACE7 /* AppDelegate.swift in Sources */,
+				485F272C248696F5008E1231 /* RightMenuViewController.swift in Sources */,
+				485F2716248693F1008E1231 /* RegistUserViewController.swift in Sources */,
+				485F2724248696E2008E1231 /* LeftMenuViewController.swift in Sources */,
+				485F271D24869646008E1231 /* BaseViewController.swift in Sources */,
 				48A1E8F02483ABA600E7ACE7 /* AppRouter.swift in Sources */,
 				48A1E9032483F83C00E7ACE7 /* HomeViewController.swift in Sources */,
 			);
@@ -429,11 +487,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E8FC2483F82E00E7ACE7 /* BaseViewController.swift in Sources */,
 				48A1E90D2483F89A00E7ACE7 /* MovieViewController.swift in Sources */,
 				48A1E8F72483F7E700E7ACE7 /* MainTabbar.swift in Sources */,
 				48A1E8EA2483AB7200E7ACE7 /* LoginViewController.swift in Sources */,
 				48A1E8C52483A1A500E7ACE7 /* simpleappTests.swift in Sources */,
+				485F272D248696F5008E1231 /* RightMenuViewController.swift in Sources */,
+				485F2717248693F1008E1231 /* RegistUserViewController.swift in Sources */,
+				485F2725248696E2008E1231 /* LeftMenuViewController.swift in Sources */,
+				485F271E24869646008E1231 /* BaseViewController.swift in Sources */,
 				48A1E8F12483ABA600E7ACE7 /* AppRouter.swift in Sources */,
 				48A1E9042483F83C00E7ACE7 /* HomeViewController.swift in Sources */,
 			);
@@ -443,11 +504,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E8FD2483F82E00E7ACE7 /* BaseViewController.swift in Sources */,
 				48A1E90E2483F89A00E7ACE7 /* MovieViewController.swift in Sources */,
 				48A1E8F82483F7E700E7ACE7 /* MainTabbar.swift in Sources */,
 				48A1E8EB2483AB7200E7ACE7 /* LoginViewController.swift in Sources */,
 				48A1E8D02483A1A500E7ACE7 /* simpleappUITests.swift in Sources */,
+				485F272E248696F5008E1231 /* RightMenuViewController.swift in Sources */,
+				485F2718248693F1008E1231 /* RegistUserViewController.swift in Sources */,
+				485F2726248696E2008E1231 /* LeftMenuViewController.swift in Sources */,
+				485F271F24869646008E1231 /* BaseViewController.swift in Sources */,
 				48A1E8F22483ABA600E7ACE7 /* AppRouter.swift in Sources */,
 				48A1E9052483F83C00E7ACE7 /* HomeViewController.swift in Sources */,
 			);
