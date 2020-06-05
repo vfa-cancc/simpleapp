@@ -35,8 +35,10 @@ class MainTabbar: UITabBarController {
         self.tabBar.backgroundColor = .white
         navigationItem.setHidesBackButton(true, animated: true)
         let homeVC = HomeViewController()
+        
         let movieVC = MovieViewController()
-        homeVC.tabBarItem = setBarItem(title: NSLocalizedString("home_tab_bar_title", comment: ""), selectedImage: UIImage(named: "ic_home"), normalImage: UIImage(named: "ic_home"))
+        homeVC.tabBarItem = setBarItem(title: "", selectedImage: UIImage(named: "tabbar_chat_off"), normalImage: UIImage(named: "tabbar_chat_on"))
+        homeVC.tabBarItem = setBarItem(title: "", selectedImage: UIImage(named: "tabbar_chat_off"), normalImage: UIImage(named: "tabbar_chat_on"))
         movieVC.tabBarItem = setBarItem(title: NSLocalizedString("movie_tab_bar_title", comment: ""), selectedImage: UIImage(named: "ic_movie"), normalImage: UIImage(named: "ic_movie"))
         listViewController = [homeVC, movieVC]
         for controller in listViewController {

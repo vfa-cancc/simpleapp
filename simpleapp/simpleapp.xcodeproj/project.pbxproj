@@ -7,56 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		485F2716248693F1008E1231 /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2714248693F1008E1231 /* RegistUserViewController.swift */; };
-		485F2717248693F1008E1231 /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2714248693F1008E1231 /* RegistUserViewController.swift */; };
-		485F2718248693F1008E1231 /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2714248693F1008E1231 /* RegistUserViewController.swift */; };
-		485F2719248693F1008E1231 /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2715248693F1008E1231 /* RegistUserViewController.xib */; };
-		485F271A248693F1008E1231 /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2715248693F1008E1231 /* RegistUserViewController.xib */; };
-		485F271B248693F1008E1231 /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2715248693F1008E1231 /* RegistUserViewController.xib */; };
-		485F271D24869646008E1231 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F271C24869646008E1231 /* BaseViewController.swift */; };
-		485F271E24869646008E1231 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F271C24869646008E1231 /* BaseViewController.swift */; };
-		485F271F24869646008E1231 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F271C24869646008E1231 /* BaseViewController.swift */; };
-		485F2724248696E2008E1231 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2722248696E2008E1231 /* LeftMenuViewController.swift */; };
-		485F2725248696E2008E1231 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2722248696E2008E1231 /* LeftMenuViewController.swift */; };
-		485F2726248696E2008E1231 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F2722248696E2008E1231 /* LeftMenuViewController.swift */; };
-		485F2727248696E2008E1231 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2723248696E2008E1231 /* LeftMenuViewController.xib */; };
-		485F2728248696E2008E1231 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2723248696E2008E1231 /* LeftMenuViewController.xib */; };
-		485F2729248696E2008E1231 /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F2723248696E2008E1231 /* LeftMenuViewController.xib */; };
-		485F272C248696F5008E1231 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F272A248696F5008E1231 /* RightMenuViewController.swift */; };
-		485F272D248696F5008E1231 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F272A248696F5008E1231 /* RightMenuViewController.swift */; };
-		485F272E248696F5008E1231 /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 485F272A248696F5008E1231 /* RightMenuViewController.swift */; };
-		485F272F248696F5008E1231 /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F272B248696F5008E1231 /* RightMenuViewController.xib */; };
-		485F2730248696F5008E1231 /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F272B248696F5008E1231 /* RightMenuViewController.xib */; };
-		485F2731248696F5008E1231 /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 485F272B248696F5008E1231 /* RightMenuViewController.xib */; };
+		48675425248A224200F9982E /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675424248A224200F9982E /* UIViewController+Utilities.swift */; };
+		48675426248A224200F9982E /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675424248A224200F9982E /* UIViewController+Utilities.swift */; };
+		48675427248A224200F9982E /* UIViewController+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675424248A224200F9982E /* UIViewController+Utilities.swift */; };
+		4867547F248A295400F9982E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867546A248A295200F9982E /* LoginViewController.xib */; };
+		48675480248A295400F9982E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867546A248A295200F9982E /* LoginViewController.xib */; };
+		48675481248A295400F9982E /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867546A248A295200F9982E /* LoginViewController.xib */; };
+		48675482248A295400F9982E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867546B248A295200F9982E /* LoginViewController.swift */; };
+		48675483248A295400F9982E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867546B248A295200F9982E /* LoginViewController.swift */; };
+		48675484248A295400F9982E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867546B248A295200F9982E /* LoginViewController.swift */; };
+		48675485248A295400F9982E /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867546D248A295200F9982E /* RegistUserViewController.swift */; };
+		48675486248A295400F9982E /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867546D248A295200F9982E /* RegistUserViewController.swift */; };
+		48675487248A295400F9982E /* RegistUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867546D248A295200F9982E /* RegistUserViewController.swift */; };
+		48675488248A295400F9982E /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867546E248A295200F9982E /* RegistUserViewController.xib */; };
+		48675489248A295400F9982E /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867546E248A295200F9982E /* RegistUserViewController.xib */; };
+		4867548A248A295400F9982E /* RegistUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867546E248A295200F9982E /* RegistUserViewController.xib */; };
+		4867548B248A295400F9982E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675471248A295300F9982E /* HomeViewController.xib */; };
+		4867548C248A295400F9982E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675471248A295300F9982E /* HomeViewController.xib */; };
+		4867548D248A295400F9982E /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675471248A295300F9982E /* HomeViewController.xib */; };
+		4867548E248A295400F9982E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675472248A295300F9982E /* HomeViewController.swift */; };
+		4867548F248A295400F9982E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675472248A295300F9982E /* HomeViewController.swift */; };
+		48675490248A295400F9982E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675472248A295300F9982E /* HomeViewController.swift */; };
+		48675491248A295400F9982E /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675474248A295300F9982E /* RightMenuViewController.swift */; };
+		48675492248A295400F9982E /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675474248A295300F9982E /* RightMenuViewController.swift */; };
+		48675493248A295400F9982E /* RightMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675474248A295300F9982E /* RightMenuViewController.swift */; };
+		48675494248A295400F9982E /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675475248A295300F9982E /* RightMenuViewController.xib */; };
+		48675495248A295400F9982E /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675475248A295300F9982E /* RightMenuViewController.xib */; };
+		48675496248A295400F9982E /* RightMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675475248A295300F9982E /* RightMenuViewController.xib */; };
+		48675497248A295400F9982E /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675477248A295300F9982E /* LeftMenuViewController.xib */; };
+		48675498248A295400F9982E /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675477248A295300F9982E /* LeftMenuViewController.xib */; };
+		48675499248A295400F9982E /* LeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48675477248A295300F9982E /* LeftMenuViewController.xib */; };
+		4867549A248A295400F9982E /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675478248A295300F9982E /* LeftMenuViewController.swift */; };
+		4867549B248A295400F9982E /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675478248A295300F9982E /* LeftMenuViewController.swift */; };
+		4867549C248A295400F9982E /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48675478248A295300F9982E /* LeftMenuViewController.swift */; };
+		4867549D248A295400F9982E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867547B248A295400F9982E /* BaseViewController.swift */; };
+		4867549E248A295400F9982E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867547B248A295400F9982E /* BaseViewController.swift */; };
+		4867549F248A295400F9982E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867547B248A295400F9982E /* BaseViewController.swift */; };
+		486754A0248A295400F9982E /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867547D248A295400F9982E /* MovieViewController.swift */; };
+		486754A1248A295400F9982E /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867547D248A295400F9982E /* MovieViewController.swift */; };
+		486754A2248A295400F9982E /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867547D248A295400F9982E /* MovieViewController.swift */; };
+		486754A3248A295400F9982E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867547E248A295400F9982E /* MovieViewController.xib */; };
+		486754A4248A295400F9982E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867547E248A295400F9982E /* MovieViewController.xib */; };
+		486754A5248A295400F9982E /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4867547E248A295400F9982E /* MovieViewController.xib */; };
+		486754A9248A2AA700F9982E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486754A7248A2AA700F9982E /* NotificationsViewController.swift */; };
+		486754AA248A2AA700F9982E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486754A7248A2AA700F9982E /* NotificationsViewController.swift */; };
+		486754AB248A2AA700F9982E /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486754A7248A2AA700F9982E /* NotificationsViewController.swift */; };
+		486754AC248A2AA700F9982E /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486754A8248A2AA700F9982E /* NotificationsViewController.xib */; };
+		486754AD248A2AA700F9982E /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486754A8248A2AA700F9982E /* NotificationsViewController.xib */; };
+		486754AE248A2AA700F9982E /* NotificationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 486754A8248A2AA700F9982E /* NotificationsViewController.xib */; };
 		48A1E8AE2483A1A300E7ACE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8AD2483A1A300E7ACE7 /* AppDelegate.swift */; };
 		48A1E8B72483A1A500E7ACE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8B62483A1A500E7ACE7 /* Assets.xcassets */; };
 		48A1E8BA2483A1A500E7ACE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8B82483A1A500E7ACE7 /* LaunchScreen.storyboard */; };
 		48A1E8C52483A1A500E7ACE7 /* simpleappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8C42483A1A500E7ACE7 /* simpleappTests.swift */; };
 		48A1E8D02483A1A500E7ACE7 /* simpleappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8CF2483A1A500E7ACE7 /* simpleappUITests.swift */; };
-		48A1E8E92483AB7200E7ACE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8E72483AB7200E7ACE7 /* LoginViewController.swift */; };
-		48A1E8EA2483AB7200E7ACE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8E72483AB7200E7ACE7 /* LoginViewController.swift */; };
-		48A1E8EB2483AB7200E7ACE7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8E72483AB7200E7ACE7 /* LoginViewController.swift */; };
-		48A1E8EC2483AB7200E7ACE7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8E82483AB7200E7ACE7 /* LoginViewController.xib */; };
-		48A1E8ED2483AB7200E7ACE7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8E82483AB7200E7ACE7 /* LoginViewController.xib */; };
-		48A1E8EE2483AB7200E7ACE7 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E8E82483AB7200E7ACE7 /* LoginViewController.xib */; };
 		48A1E8F02483ABA600E7ACE7 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8EF2483ABA600E7ACE7 /* AppRouter.swift */; };
 		48A1E8F12483ABA600E7ACE7 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8EF2483ABA600E7ACE7 /* AppRouter.swift */; };
 		48A1E8F22483ABA600E7ACE7 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8EF2483ABA600E7ACE7 /* AppRouter.swift */; };
 		48A1E8F62483F7E700E7ACE7 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */; };
 		48A1E8F72483F7E700E7ACE7 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */; };
 		48A1E8F82483F7E700E7ACE7 /* MainTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */; };
-		48A1E9032483F83C00E7ACE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */; };
-		48A1E9042483F83C00E7ACE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */; };
-		48A1E9052483F83C00E7ACE7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */; };
-		48A1E9062483F83C00E7ACE7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E9022483F83C00E7ACE7 /* HomeViewController.xib */; };
-		48A1E9072483F83C00E7ACE7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E9022483F83C00E7ACE7 /* HomeViewController.xib */; };
-		48A1E9082483F83C00E7ACE7 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E9022483F83C00E7ACE7 /* HomeViewController.xib */; };
-		48A1E90C2483F89A00E7ACE7 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E90A2483F89A00E7ACE7 /* MovieViewController.swift */; };
-		48A1E90D2483F89A00E7ACE7 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E90A2483F89A00E7ACE7 /* MovieViewController.swift */; };
-		48A1E90E2483F89A00E7ACE7 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A1E90A2483F89A00E7ACE7 /* MovieViewController.swift */; };
-		48A1E90F2483F89A00E7ACE7 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E90B2483F89A00E7ACE7 /* MovieViewController.xib */; };
-		48A1E9102483F89A00E7ACE7 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E90B2483F89A00E7ACE7 /* MovieViewController.xib */; };
-		48A1E9112483F89A00E7ACE7 /* MovieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A1E90B2483F89A00E7ACE7 /* MovieViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,13 +86,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		485F2714248693F1008E1231 /* RegistUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistUserViewController.swift; sourceTree = "<group>"; };
-		485F2715248693F1008E1231 /* RegistUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegistUserViewController.xib; sourceTree = "<group>"; };
-		485F271C24869646008E1231 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		485F2722248696E2008E1231 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
-		485F2723248696E2008E1231 /* LeftMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
-		485F272A248696F5008E1231 /* RightMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
-		485F272B248696F5008E1231 /* RightMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RightMenuViewController.xib; sourceTree = "<group>"; };
+		48675424248A224200F9982E /* UIViewController+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utilities.swift"; sourceTree = "<group>"; };
+		4867546A248A295200F9982E /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		4867546B248A295200F9982E /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		4867546D248A295200F9982E /* RegistUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistUserViewController.swift; sourceTree = "<group>"; };
+		4867546E248A295200F9982E /* RegistUserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegistUserViewController.xib; sourceTree = "<group>"; };
+		48675471248A295300F9982E /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		48675472248A295300F9982E /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		48675474248A295300F9982E /* RightMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightMenuViewController.swift; sourceTree = "<group>"; };
+		48675475248A295300F9982E /* RightMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RightMenuViewController.xib; sourceTree = "<group>"; };
+		48675477248A295300F9982E /* LeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LeftMenuViewController.xib; sourceTree = "<group>"; };
+		48675478248A295300F9982E /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		4867547B248A295400F9982E /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		4867547D248A295400F9982E /* MovieViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		4867547E248A295400F9982E /* MovieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
+		486754A7248A2AA700F9982E /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		486754A8248A2AA700F9982E /* NotificationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsViewController.xib; sourceTree = "<group>"; };
 		48A1E8AA2483A1A300E7ACE7 /* simpleapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = simpleapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A1E8AD2483A1A300E7ACE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48A1E8B62483A1A500E7ACE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -95,14 +113,8 @@
 		48A1E8CB2483A1A500E7ACE7 /* simpleappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = simpleappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A1E8CF2483A1A500E7ACE7 /* simpleappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = simpleappUITests.swift; sourceTree = "<group>"; };
 		48A1E8D12483A1A500E7ACE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		48A1E8E72483AB7200E7ACE7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		48A1E8E82483AB7200E7ACE7 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		48A1E8EF2483ABA600E7ACE7 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		48A1E8F52483F7E700E7ACE7 /* MainTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabbar.swift; sourceTree = "<group>"; };
-		48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		48A1E9022483F83C00E7ACE7 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		48A1E90A2483F89A00E7ACE7 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
-		48A1E90B2483F89A00E7ACE7 /* MovieViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,31 +142,104 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		485F2713248693DE008E1231 /* RegistUser */ = {
+		48675423248A223100F9982E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				485F2714248693F1008E1231 /* RegistUserViewController.swift */,
-				485F2715248693F1008E1231 /* RegistUserViewController.xib */,
+				48675424248A224200F9982E /* UIViewController+Utilities.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		48675428248A22C900F9982E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		48675469248A295200F9982E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				4867546A248A295200F9982E /* LoginViewController.xib */,
+				4867546B248A295200F9982E /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		4867546C248A295200F9982E /* RegistUser */ = {
+			isa = PBXGroup;
+			children = (
+				4867546D248A295200F9982E /* RegistUserViewController.swift */,
+				4867546E248A295200F9982E /* RegistUserViewController.xib */,
 			);
 			path = RegistUser;
 			sourceTree = "<group>";
 		};
-		485F27202486968F008E1231 /* LeftMenu */ = {
+		4867546F248A295300F9982E /* More */ = {
 			isa = PBXGroup;
 			children = (
-				485F2722248696E2008E1231 /* LeftMenuViewController.swift */,
-				485F2723248696E2008E1231 /* LeftMenuViewController.xib */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		48675470248A295300F9982E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				48675471248A295300F9982E /* HomeViewController.xib */,
+				48675472248A295300F9982E /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		48675473248A295300F9982E /* RightMenu */ = {
+			isa = PBXGroup;
+			children = (
+				48675474248A295300F9982E /* RightMenuViewController.swift */,
+				48675475248A295300F9982E /* RightMenuViewController.xib */,
+			);
+			path = RightMenu;
+			sourceTree = "<group>";
+		};
+		48675476248A295300F9982E /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				48675477248A295300F9982E /* LeftMenuViewController.xib */,
+				48675478248A295300F9982E /* LeftMenuViewController.swift */,
 			);
 			path = LeftMenu;
 			sourceTree = "<group>";
 		};
-		485F2721248696AE008E1231 /* RightMenu */ = {
+		48675479248A295400F9982E /* Group */ = {
 			isa = PBXGroup;
 			children = (
-				485F272A248696F5008E1231 /* RightMenuViewController.swift */,
-				485F272B248696F5008E1231 /* RightMenuViewController.xib */,
 			);
-			path = RightMenu;
+			path = Group;
+			sourceTree = "<group>";
+		};
+		4867547A248A295400F9982E /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				4867547B248A295400F9982E /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		4867547C248A295400F9982E /* Movie */ = {
+			isa = PBXGroup;
+			children = (
+				4867547D248A295400F9982E /* MovieViewController.swift */,
+				4867547E248A295400F9982E /* MovieViewController.xib */,
+			);
+			path = Movie;
+			sourceTree = "<group>";
+		};
+		486754A6248A2A8E00F9982E /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				486754A7248A2AA700F9982E /* NotificationsViewController.swift */,
+				486754A8248A2AA700F9982E /* NotificationsViewController.xib */,
+			);
+			path = Notifications;
 			sourceTree = "<group>";
 		};
 		48A1E8A12483A1A300E7ACE7 = {
@@ -182,6 +267,7 @@
 			children = (
 				48A1E8E22483A79900E7ACE7 /* Services */,
 				48A1E8E12483A78C00E7ACE7 /* Common */,
+				48675428248A22C900F9982E /* Coordinator */,
 				48A1E8E52483A7DE00E7ACE7 /* Models */,
 				48A1E8DF2483A76100E7ACE7 /* Views */,
 				48A1E8DE2483A75800E7ACE7 /* Controllers */,
@@ -222,13 +308,16 @@
 		48A1E8DE2483A75800E7ACE7 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				485F2721248696AE008E1231 /* RightMenu */,
-				485F27202486968F008E1231 /* LeftMenu */,
-				485F2713248693DE008E1231 /* RegistUser */,
-				48A1E8F42483AF6900E7ACE7 /* Base */,
-				48A1E8F32483AF6200E7ACE7 /* Home */,
-				48A1E9092483F88500E7ACE7 /* Movie */,
-				48A1E8E62483A95700E7ACE7 /* Login */,
+				486754A6248A2A8E00F9982E /* Notifications */,
+				4867547A248A295400F9982E /* Base */,
+				48675479248A295400F9982E /* Group */,
+				48675470248A295300F9982E /* Home */,
+				48675476248A295300F9982E /* LeftMenu */,
+				48675469248A295200F9982E /* Login */,
+				4867546F248A295300F9982E /* More */,
+				4867547C248A295400F9982E /* Movie */,
+				4867546C248A295200F9982E /* RegistUser */,
+				48675473248A295300F9982E /* RightMenu */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -251,7 +340,7 @@
 		48A1E8E12483A78C00E7ACE7 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				48A1E8E42483A7C700E7ACE7 /* Extensions */,
+				48675423248A223100F9982E /* Extensions */,
 				48A1E8DD2483A74800E7ACE7 /* Helper */,
 			);
 			path = Common;
@@ -273,53 +362,11 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
-		48A1E8E42483A7C700E7ACE7 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		48A1E8E52483A7DE00E7ACE7 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		48A1E8E62483A95700E7ACE7 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				48A1E8E72483AB7200E7ACE7 /* LoginViewController.swift */,
-				48A1E8E82483AB7200E7ACE7 /* LoginViewController.xib */,
-			);
-			path = Login;
-			sourceTree = "<group>";
-		};
-		48A1E8F32483AF6200E7ACE7 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				48A1E9012483F83C00E7ACE7 /* HomeViewController.swift */,
-				48A1E9022483F83C00E7ACE7 /* HomeViewController.xib */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		48A1E8F42483AF6900E7ACE7 /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				485F271C24869646008E1231 /* BaseViewController.swift */,
-			);
-			path = Base;
-			sourceTree = "<group>";
-		};
-		48A1E9092483F88500E7ACE7 /* Movie */ = {
-			isa = PBXGroup;
-			children = (
-				48A1E90A2483F89A00E7ACE7 /* MovieViewController.swift */,
-				48A1E90B2483F89A00E7ACE7 /* MovieViewController.xib */,
-			);
-			path = Movie;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -427,13 +474,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				48A1E8BA2483A1A500E7ACE7 /* LaunchScreen.storyboard in Resources */,
-				48A1E9062483F83C00E7ACE7 /* HomeViewController.xib in Resources */,
-				48A1E90F2483F89A00E7ACE7 /* MovieViewController.xib in Resources */,
-				485F2719248693F1008E1231 /* RegistUserViewController.xib in Resources */,
+				48675488248A295400F9982E /* RegistUserViewController.xib in Resources */,
+				4867548B248A295400F9982E /* HomeViewController.xib in Resources */,
 				48A1E8B72483A1A500E7ACE7 /* Assets.xcassets in Resources */,
-				485F2727248696E2008E1231 /* LeftMenuViewController.xib in Resources */,
-				485F272F248696F5008E1231 /* RightMenuViewController.xib in Resources */,
-				48A1E8EC2483AB7200E7ACE7 /* LoginViewController.xib in Resources */,
+				48675494248A295400F9982E /* RightMenuViewController.xib in Resources */,
+				48675497248A295400F9982E /* LeftMenuViewController.xib in Resources */,
+				486754AC248A2AA700F9982E /* NotificationsViewController.xib in Resources */,
+				4867547F248A295400F9982E /* LoginViewController.xib in Resources */,
+				486754A3248A295400F9982E /* MovieViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,12 +489,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E8ED2483AB7200E7ACE7 /* LoginViewController.xib in Resources */,
-				48A1E9072483F83C00E7ACE7 /* HomeViewController.xib in Resources */,
-				48A1E9102483F89A00E7ACE7 /* MovieViewController.xib in Resources */,
-				485F2728248696E2008E1231 /* LeftMenuViewController.xib in Resources */,
-				485F2730248696F5008E1231 /* RightMenuViewController.xib in Resources */,
-				485F271A248693F1008E1231 /* RegistUserViewController.xib in Resources */,
+				486754AD248A2AA700F9982E /* NotificationsViewController.xib in Resources */,
+				48675480248A295400F9982E /* LoginViewController.xib in Resources */,
+				48675489248A295400F9982E /* RegistUserViewController.xib in Resources */,
+				48675495248A295400F9982E /* RightMenuViewController.xib in Resources */,
+				486754A4248A295400F9982E /* MovieViewController.xib in Resources */,
+				48675498248A295400F9982E /* LeftMenuViewController.xib in Resources */,
+				4867548C248A295400F9982E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,12 +503,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E8EE2483AB7200E7ACE7 /* LoginViewController.xib in Resources */,
-				48A1E9082483F83C00E7ACE7 /* HomeViewController.xib in Resources */,
-				48A1E9112483F89A00E7ACE7 /* MovieViewController.xib in Resources */,
-				485F2729248696E2008E1231 /* LeftMenuViewController.xib in Resources */,
-				485F2731248696F5008E1231 /* RightMenuViewController.xib in Resources */,
-				485F271B248693F1008E1231 /* RegistUserViewController.xib in Resources */,
+				486754AE248A2AA700F9982E /* NotificationsViewController.xib in Resources */,
+				48675481248A295400F9982E /* LoginViewController.xib in Resources */,
+				4867548A248A295400F9982E /* RegistUserViewController.xib in Resources */,
+				48675496248A295400F9982E /* RightMenuViewController.xib in Resources */,
+				486754A5248A295400F9982E /* MovieViewController.xib in Resources */,
+				48675499248A295400F9982E /* LeftMenuViewController.xib in Resources */,
+				4867548D248A295400F9982E /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -470,16 +520,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E90C2483F89A00E7ACE7 /* MovieViewController.swift in Sources */,
+				48675425248A224200F9982E /* UIViewController+Utilities.swift in Sources */,
 				48A1E8F62483F7E700E7ACE7 /* MainTabbar.swift in Sources */,
-				48A1E8E92483AB7200E7ACE7 /* LoginViewController.swift in Sources */,
+				486754A0248A295400F9982E /* MovieViewController.swift in Sources */,
+				486754A9248A2AA700F9982E /* NotificationsViewController.swift in Sources */,
+				48675491248A295400F9982E /* RightMenuViewController.swift in Sources */,
 				48A1E8AE2483A1A300E7ACE7 /* AppDelegate.swift in Sources */,
-				485F272C248696F5008E1231 /* RightMenuViewController.swift in Sources */,
-				485F2716248693F1008E1231 /* RegistUserViewController.swift in Sources */,
-				485F2724248696E2008E1231 /* LeftMenuViewController.swift in Sources */,
-				485F271D24869646008E1231 /* BaseViewController.swift in Sources */,
+				48675482248A295400F9982E /* LoginViewController.swift in Sources */,
+				4867549D248A295400F9982E /* BaseViewController.swift in Sources */,
+				4867549A248A295400F9982E /* LeftMenuViewController.swift in Sources */,
 				48A1E8F02483ABA600E7ACE7 /* AppRouter.swift in Sources */,
-				48A1E9032483F83C00E7ACE7 /* HomeViewController.swift in Sources */,
+				4867548E248A295400F9982E /* HomeViewController.swift in Sources */,
+				48675485248A295400F9982E /* RegistUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,16 +539,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E90D2483F89A00E7ACE7 /* MovieViewController.swift in Sources */,
+				48675426248A224200F9982E /* UIViewController+Utilities.swift in Sources */,
 				48A1E8F72483F7E700E7ACE7 /* MainTabbar.swift in Sources */,
-				48A1E8EA2483AB7200E7ACE7 /* LoginViewController.swift in Sources */,
+				486754A1248A295400F9982E /* MovieViewController.swift in Sources */,
+				486754AA248A2AA700F9982E /* NotificationsViewController.swift in Sources */,
+				48675492248A295400F9982E /* RightMenuViewController.swift in Sources */,
 				48A1E8C52483A1A500E7ACE7 /* simpleappTests.swift in Sources */,
-				485F272D248696F5008E1231 /* RightMenuViewController.swift in Sources */,
-				485F2717248693F1008E1231 /* RegistUserViewController.swift in Sources */,
-				485F2725248696E2008E1231 /* LeftMenuViewController.swift in Sources */,
-				485F271E24869646008E1231 /* BaseViewController.swift in Sources */,
+				48675483248A295400F9982E /* LoginViewController.swift in Sources */,
+				4867549E248A295400F9982E /* BaseViewController.swift in Sources */,
+				4867549B248A295400F9982E /* LeftMenuViewController.swift in Sources */,
 				48A1E8F12483ABA600E7ACE7 /* AppRouter.swift in Sources */,
-				48A1E9042483F83C00E7ACE7 /* HomeViewController.swift in Sources */,
+				4867548F248A295400F9982E /* HomeViewController.swift in Sources */,
+				48675486248A295400F9982E /* RegistUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,16 +558,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				48A1E90E2483F89A00E7ACE7 /* MovieViewController.swift in Sources */,
+				48675427248A224200F9982E /* UIViewController+Utilities.swift in Sources */,
 				48A1E8F82483F7E700E7ACE7 /* MainTabbar.swift in Sources */,
-				48A1E8EB2483AB7200E7ACE7 /* LoginViewController.swift in Sources */,
+				486754A2248A295400F9982E /* MovieViewController.swift in Sources */,
+				486754AB248A2AA700F9982E /* NotificationsViewController.swift in Sources */,
+				48675493248A295400F9982E /* RightMenuViewController.swift in Sources */,
 				48A1E8D02483A1A500E7ACE7 /* simpleappUITests.swift in Sources */,
-				485F272E248696F5008E1231 /* RightMenuViewController.swift in Sources */,
-				485F2718248693F1008E1231 /* RegistUserViewController.swift in Sources */,
-				485F2726248696E2008E1231 /* LeftMenuViewController.swift in Sources */,
-				485F271F24869646008E1231 /* BaseViewController.swift in Sources */,
+				48675484248A295400F9982E /* LoginViewController.swift in Sources */,
+				4867549F248A295400F9982E /* BaseViewController.swift in Sources */,
+				4867549C248A295400F9982E /* LeftMenuViewController.swift in Sources */,
 				48A1E8F22483ABA600E7ACE7 /* AppRouter.swift in Sources */,
-				48A1E9052483F83C00E7ACE7 /* HomeViewController.swift in Sources */,
+				48675490248A295400F9982E /* HomeViewController.swift in Sources */,
+				48675487248A295400F9982E /* RegistUserViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
