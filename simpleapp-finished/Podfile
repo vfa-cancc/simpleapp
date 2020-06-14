@@ -40,7 +40,8 @@ def demo_chat_frameworks
     #start - add pod support movie function
     pod 'Alamofire'
     #pod 'PageMenu', '~> 1.2.9'
-    pod 'youtube-parser'
+#    pod 'youtube-parser'
+    pod 'youtube-ios-player-helper-swift'
     #end
     
     #start - add pod support music function

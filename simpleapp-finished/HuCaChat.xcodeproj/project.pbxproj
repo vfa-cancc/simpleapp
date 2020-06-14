@@ -218,6 +218,10 @@
 		489633471EB6371400C9E2ED /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489633441EB6371400C9E2ED /* TagView.swift */; };
 		4897CC6B1E6FE4BF00D07D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4897CC6A1E6FE4BF00D07D7B /* Assets.xcassets */; };
 		4897CC6D1E7001E800D07D7B /* MessageDownPhotoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897CC6C1E7001E800D07D7B /* MessageDownPhotoOperation.swift */; };
+		48A721AE249623990060945F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721AD249623990060945F /* PlayerView.swift */; };
+		48A721AF249623990060945F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721AD249623990060945F /* PlayerView.swift */; };
+		48A721B4249633800060945F /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A721B3249633800060945F /* PlayerView.xib */; };
+		48A721B5249633800060945F /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A721B3249633800060945F /* PlayerView.xib */; };
 		48A73BDD1EBF6F9D000B1AC0 /* RightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A73BDC1EBF6F9D000B1AC0 /* RightCell.swift */; };
 		48AA513A1F41A2A6005E7FA8 /* CommonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AA51391F41A2A6005E7FA8 /* CommonExtention.swift */; };
 		48AA513C1F41A3AB005E7FA8 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AA513B1F41A3AB005E7FA8 /* Genre.swift */; };
@@ -397,6 +401,8 @@
 		489633441EB6371400C9E2ED /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		4897CC6A1E6FE4BF00D07D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo_Chat/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		4897CC6C1E7001E800D07D7B /* MessageDownPhotoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDownPhotoOperation.swift; sourceTree = "<group>"; };
+		48A721AD249623990060945F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		48A721B3249633800060945F /* PlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
 		48A73BDC1EBF6F9D000B1AC0 /* RightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCell.swift; sourceTree = "<group>"; };
 		48A73BDE1EBF7516000B1AC0 /* Demo_Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo_Chat.entitlements; sourceTree = "<group>"; };
 		48AA51391F41A2A6005E7FA8 /* CommonExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonExtention.swift; sourceTree = "<group>"; };
@@ -635,6 +641,8 @@
 				48118AD51F42ECD600DE6223 /* MovieDetailTableCell.swift */,
 				48118AD81F42ECFC00DE6223 /* MovieDetailCollectionCell.swift */,
 				48118ADB1F42ED8600DE6223 /* MovieDetailListTableCell.swift */,
+				48A721AD249623990060945F /* PlayerView.swift */,
+				48A721B3249633800060945F /* PlayerView.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1316,6 +1324,7 @@
 				48789CDE1F24F291007D24CE /* CRNotificationsMedia.xcassets in Resources */,
 				48789CE01F24F291007D24CE /* gotham-medium.ttf in Resources */,
 				48CC55A81F58693C00ADB164 /* AMN.png in Resources */,
+				48A721B5249633800060945F /* PlayerView.xib in Resources */,
 				482998641F56CAD3009EEA7C /* local.db in Resources */,
 				48FE8B4921037FF600AA3DD3 /* HuCaChat_Dev-Info.plist in Resources */,
 				4812F0911F3A223F0039A011 /* ECDD.mp3 in Resources */,
@@ -1370,6 +1379,7 @@
 				484AC1F41F57EC3E0010B65E /* GoogleService-Info-Real.plist in Resources */,
 				4812F0961F3A223F0039A011 /* TMW.mp3 in Resources */,
 				4897CC6B1E6FE4BF00D07D7B /* Assets.xcassets in Resources */,
+				48A721B4249633800060945F /* PlayerView.xib in Resources */,
 				4812F0781F3A223F0039A011 /* AMN.mp3 in Resources */,
 				F79E46971E54608A005E8518 /* GoogleService-Info.plist in Resources */,
 				4812F07E1F3A223F0039A011 /* CCNM.mp3 in Resources */,
@@ -1449,7 +1459,7 @@
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-				"${BUILT_PRODUCTS_DIR}/youtube-parser/youtube_parser.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper-swift/youtube_ios_player_helper_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1465,7 +1475,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_parser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1491,7 +1501,7 @@
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-				"${BUILT_PRODUCTS_DIR}/youtube-parser/youtube_parser.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper-swift/youtube_ios_player_helper_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1507,7 +1517,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_parser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1638,6 +1648,7 @@
 				48789CA71F24F291007D24CE /* RightMenuViewController.swift in Sources */,
 				48D343EF1F386BD5005FAFA3 /* HCKaraokeLyricLabel.swift in Sources */,
 				4887790F1F444850004D10D1 /* ApplicationModel.swift in Sources */,
+				48A721AF249623990060945F /* PlayerView.swift in Sources */,
 				48789CA81F24F291007D24CE /* HidingViewController.swift in Sources */,
 				4803C7D31F3D66F3000392E5 /* HCPageMenu.swift in Sources */,
 				48789CA91F24F291007D24CE /* UIManager.swift in Sources */,
@@ -1782,6 +1793,7 @@
 				481C2FD01EB6165B00DC3310 /* AddUsersCell.swift in Sources */,
 				48C20F331EBB0A5400517B8C /* SwipeCell.swift in Sources */,
 				F7E9B1771E48C2950096F17E /* UIView+Helper.m in Sources */,
+				48A721AE249623990060945F /* PlayerView.swift in Sources */,
 				480FED5F1F399B3000CDF17A /* SongModel.swift in Sources */,
 				48F4BB941F21036B00A29AD7 /* NotificationHelper.swift in Sources */,
 				48840F901F31D433001EC226 /* MapViewController.swift in Sources */,
@@ -2036,7 +2048,7 @@
 					"$(PROJECT_DIR)/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Demo_Chat/SupportFiles/HuCaChat_Dev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"CHATDEV\"";
@@ -2078,7 +2090,7 @@
 					"$(PROJECT_DIR)/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Demo_Chat/SupportFiles/HuCaChat_Dev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"CHATDEV\"";

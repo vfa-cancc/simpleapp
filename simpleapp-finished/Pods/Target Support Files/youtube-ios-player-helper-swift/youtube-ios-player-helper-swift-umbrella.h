@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double youtube_parserVersionNumber;
-FOUNDATION_EXPORT const unsigned char youtube_parserVersionString[];
+FOUNDATION_EXPORT double youtube_ios_player_helper_swiftVersionNumber;
+FOUNDATION_EXPORT const unsigned char youtube_ios_player_helper_swiftVersionString[];
 

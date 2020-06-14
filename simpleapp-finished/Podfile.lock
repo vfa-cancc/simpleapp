@@ -71,7 +71,7 @@ PODS:
     - Fabric
   - TwitterKit (2.8.1):
     - TwitterCore (>= 2.8)
-  - youtube-parser (0.2.3)
+  - youtube-ios-player-helper-swift (1.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -92,7 +92,7 @@ DEPENDENCIES:
   - SnapKit
   - Socket.IO-Client-Swift
   - TwitterKit
-  - youtube-parser
+  - youtube-ios-player-helper-swift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -121,7 +121,8 @@ SPEC REPOS:
     - Starscream
     - TwitterCore
     - TwitterKit
-    - youtube-parser
+  trunk:
+    - youtube-ios-player-helper-swift
 
 EXTERNAL SOURCES:
   NCMB:
@@ -159,8 +160,8 @@ SPEC CHECKSUMS:
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
-  youtube-parser: 4e2bd89c8884c35eb17c3b51cfcdad272611d7be
+  youtube-ios-player-helper-swift: 51a3c5325317c8271d0c7985c1bbe5a252ffb2fd
 
-PODFILE CHECKSUM: 1a456917027510a5cf72e208d91518327ad1cacc
+PODFILE CHECKSUM: 4d1beb9d1b215d998b1cc04869526991eb78df38
 
 COCOAPODS: 1.9.1

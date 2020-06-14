@@ -8,7 +8,6 @@
 
 import UIKit
 import AVFoundation
-import youtube_parser
 import AVKit
 
 class MovieDetailViewController: BaseViewController {
@@ -17,6 +16,7 @@ class MovieDetailViewController: BaseViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var lblNoVideo: UILabel!
     
+    private var playerView: PlayerView!
     var isFirstLoad = true
     let group = DispatchGroup()
     var movie: MovieDetail?
@@ -34,7 +34,14 @@ class MovieDetailViewController: BaseViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        self.addPlayerView()
         self.setupData()
+    }
+    
+    private func addPlayerView() {
+        playerView.frame = vVideoWraper.frame
+        playerView.autoresizingMask = .flexibleWidth
+        vVideoWraper.addSubview(playerView)
     }
     
     func setupView() {
@@ -44,6 +51,7 @@ class MovieDetailViewController: BaseViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         NotificationCenter.default.addObserver(self, selector: #selector(continueAction(notification:)), name: NSNotification.Name(rawValue: "continueAction"), object: nil)
+        playerView = UINib(nibName: "PlayerView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? PlayerView
     }
     
     func setupNavigation() {
@@ -70,20 +78,7 @@ class MovieDetailViewController: BaseViewController {
                     self.videos = videos
                     for video in videos {
                         if video.type != .Trailer && video.size != 720 && video.site != "YouTube" {continue}
-                        guard let youtubeURL = URL(string: "\(VIDEO_API)watch?v=\(video.key)") else {continue}
-                        Youtube.h264videosWithYoutubeURL(youtubeURL, completion: { (info, error) in
-                            guard let urlStr = info?["url"] as? String else {return}
-                            guard let videoURL = URL(string: urlStr) else {return}
-                            
-                            let avPlayerView = AVPlayerLayer(player: AVPlayer(url: videoURL))
-                            avPlayerView.frame = self.vVideoWraper.frame
-                            self.avController.view.frame = self.vVideoWraper.frame
-                            self.avController.showsPlaybackControls = true
-                            //self.avController.allowsPictureInPicturePlayback = false
-                            self.avController.player = avPlayerView.player
-                            //self.avController.delegate = self
-                            self.vVideoWraper.addSubview(self.avController.view)
-                        })
+//                        self.playerView.videoId = video.key
                     }
                 } else {
                     self.vMovieNoResult.isHidden = false
@@ -142,8 +137,6 @@ class MovieDetailViewController: BaseViewController {
     @objc func continueAction(notification: Notification) {
         if let userInfo = notification.userInfo as? [String:Any] {
             if let videoId = userInfo["videoId"] as? Int {
-//                isLogined = 1
-//                addWatchList(videoId: videoId)
             }
         }
     }
