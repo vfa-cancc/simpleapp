@@ -63,6 +63,11 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - NCMB (2.4.3)
+  - Realm (3.19.1):
+    - Realm/Headers (= 3.19.1)
+  - Realm/Headers (3.19.1)
+  - RealmSwift (3.19.1):
+    - Realm (= 3.19.1)
   - SnapKit (4.0.0)
   - Socket.IO-Client-Swift (13.2.1):
     - Starscream (~> 3.0.2)
@@ -71,7 +76,7 @@ PODS:
     - Fabric
   - TwitterKit (2.8.1):
     - TwitterCore (>= 2.8)
-  - youtube-parser (0.2.3)
+  - youtube-ios-player-helper-swift (1.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -89,10 +94,12 @@ DEPENDENCIES:
   - GoogleMaps
   - Kingfisher
   - NCMB (from `https://github.com/NIFTYCloud-mbaas/ncmb_ios.git`)
+  - Realm (~> 3.19.0)
+  - RealmSwift (~> 3.19.0)
   - SnapKit
   - Socket.IO-Client-Swift
   - TwitterKit
-  - youtube-parser
+  - youtube-ios-player-helper-swift
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -121,7 +128,10 @@ SPEC REPOS:
     - Starscream
     - TwitterCore
     - TwitterKit
-    - youtube-parser
+  trunk:
+    - Realm
+    - RealmSwift
+    - youtube-ios-player-helper-swift
 
 EXTERNAL SOURCES:
   NCMB:
@@ -154,13 +164,15 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   NCMB: 7b88a86be4a770bd260f42295c7649b00f57f178
+  Realm: fb377747e694c7deb62d402400454134fe321bee
+  RealmSwift: 1302b0ab60f3105a2b214a735eeb0938607cf16b
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   Socket.IO-Client-Swift: b94943e2fb916fe2f95244b9ed21828634002280
   Starscream: faf918b2f2eff7d5dd21180646bf015a669673bd
   TwitterCore: e959987be23c767004d29eb7fab8d85d8585a2e5
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
-  youtube-parser: 4e2bd89c8884c35eb17c3b51cfcdad272611d7be
+  youtube-ios-player-helper-swift: 51a3c5325317c8271d0c7985c1bbe5a252ffb2fd
 
-PODFILE CHECKSUM: 1a456917027510a5cf72e208d91518327ad1cacc
+PODFILE CHECKSUM: a8dacd85ac17d3bb698885cd876737680bc58454
 
 COCOAPODS: 1.9.1

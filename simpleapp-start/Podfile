@@ -40,11 +40,14 @@ def demo_chat_frameworks
     #start - add pod support movie function
     pod 'Alamofire'
     #pod 'PageMenu', '~> 1.2.9'
-    pod 'youtube-parser'
+    #pod 'youtube-parser'
+    pod 'youtube-ios-player-helper-swift'
     #end
     
     #start - add pod support music function
-    pod 'FMDB'
+    #pod 'FMDB'
+    pod 'RealmSwift', '~> 3.19.0', :modular_headers => true
+    pod 'Realm', '~> 3.19.0', :modular_headers => true
     #end
     
     #start - add add support layout UI

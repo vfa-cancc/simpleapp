@@ -103,8 +103,6 @@
 		4829985F1F56BF90009EEA7C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4829985E1F56BF90009EEA7C /* libsqlite3.0.tbd */; };
 		482998601F56BFC9009EEA7C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48840F8C1F31C66D001EC226 /* CoreLocation.framework */; };
 		482998611F56BFDE009EEA7C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4829985E1F56BF90009EEA7C /* libsqlite3.0.tbd */; };
-		482998631F56CAD3009EEA7C /* local.db in Resources */ = {isa = PBXBuildFile; fileRef = 482998621F56CAD3009EEA7C /* local.db */; };
-		482998641F56CAD3009EEA7C /* local.db in Resources */ = {isa = PBXBuildFile; fileRef = 482998621F56CAD3009EEA7C /* local.db */; };
 		4829D9C11F19F87D000D3A71 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4829D9C01F19F87D000D3A71 /* SafariServices.framework */; };
 		483A34C91F2AD695003C7747 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34C81F2AD695003C7747 /* PushModel.swift */; };
 		483A34CA1F2AD695003C7747 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34C81F2AD695003C7747 /* PushModel.swift */; };
@@ -218,6 +216,14 @@
 		489633471EB6371400C9E2ED /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489633441EB6371400C9E2ED /* TagView.swift */; };
 		4897CC6B1E6FE4BF00D07D7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4897CC6A1E6FE4BF00D07D7B /* Assets.xcassets */; };
 		4897CC6D1E7001E800D07D7B /* MessageDownPhotoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4897CC6C1E7001E800D07D7B /* MessageDownPhotoOperation.swift */; };
+		48A721AE249623990060945F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721AD249623990060945F /* PlayerView.swift */; };
+		48A721AF249623990060945F /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721AD249623990060945F /* PlayerView.swift */; };
+		48A721B4249633800060945F /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A721B3249633800060945F /* PlayerView.xib */; };
+		48A721B5249633800060945F /* PlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48A721B3249633800060945F /* PlayerView.xib */; };
+		48A721C0249661850060945F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721BF249661840060945F /* DBHelper.swift */; };
+		48A721C1249661850060945F /* DBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721BF249661840060945F /* DBHelper.swift */; };
+		48A721C3249662F70060945F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721C2249662F70060945F /* Song.swift */; };
+		48A721C4249662F70060945F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A721C2249662F70060945F /* Song.swift */; };
 		48A73BDD1EBF6F9D000B1AC0 /* RightCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A73BDC1EBF6F9D000B1AC0 /* RightCell.swift */; };
 		48AA513A1F41A2A6005E7FA8 /* CommonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AA51391F41A2A6005E7FA8 /* CommonExtention.swift */; };
 		48AA513C1F41A3AB005E7FA8 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48AA513B1F41A3AB005E7FA8 /* Genre.swift */; };
@@ -353,7 +359,6 @@
 		482998581F569FC7009EEA7C /* LocalDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDB.swift; sourceTree = "<group>"; };
 		4829985B1F56BE1A009EEA7C /* ModelData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		4829985E1F56BF90009EEA7C /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
-		482998621F56CAD3009EEA7C /* local.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = local.db; sourceTree = "<group>"; };
 		4829D9C01F19F87D000D3A71 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		483A34C81F2AD695003C7747 /* PushModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushModel.swift; sourceTree = "<group>"; };
 		483A34CB1F2B0E0B003C7747 /* MainDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDB.swift; sourceTree = "<group>"; };
@@ -397,6 +402,10 @@
 		489633441EB6371400C9E2ED /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		4897CC6A1E6FE4BF00D07D7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo_Chat/Assets.xcassets; sourceTree = SOURCE_ROOT; };
 		4897CC6C1E7001E800D07D7B /* MessageDownPhotoOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageDownPhotoOperation.swift; sourceTree = "<group>"; };
+		48A721AD249623990060945F /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		48A721B3249633800060945F /* PlayerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerView.xib; sourceTree = "<group>"; };
+		48A721BF249661840060945F /* DBHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DBHelper.swift; sourceTree = "<group>"; };
+		48A721C2249662F70060945F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		48A73BDC1EBF6F9D000B1AC0 /* RightCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RightCell.swift; sourceTree = "<group>"; };
 		48A73BDE1EBF7516000B1AC0 /* Demo_Chat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo_Chat.entitlements; sourceTree = "<group>"; };
 		48AA51391F41A2A6005E7FA8 /* CommonExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonExtention.swift; sourceTree = "<group>"; };
@@ -635,6 +644,8 @@
 				48118AD51F42ECD600DE6223 /* MovieDetailTableCell.swift */,
 				48118AD81F42ECFC00DE6223 /* MovieDetailCollectionCell.swift */,
 				48118ADB1F42ED8600DE6223 /* MovieDetailListTableCell.swift */,
+				48A721AD249623990060945F /* PlayerView.swift */,
+				48A721B3249633800060945F /* PlayerView.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -1019,6 +1030,8 @@
 				481C05F31F553EA2008373AF /* Music.swift */,
 				482998581F569FC7009EEA7C /* LocalDB.swift */,
 				4829985B1F56BE1A009EEA7C /* ModelData.swift */,
+				48A721BF249661840060945F /* DBHelper.swift */,
+				48A721C2249662F70060945F /* Song.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1087,7 +1100,6 @@
 		F792E8161E46FF4700B9B9E2 /* SupportFiles */ = {
 			isa = PBXGroup;
 			children = (
-				482998621F56CAD3009EEA7C /* local.db */,
 				4812F0611F3A222A0039A011 /* MusicResource */,
 				485603131F24F6AE00A62606 /* HuCaChat_Release-Info.plist */,
 				485603101F24F60700A62606 /* HuCaChat_Dev-Info.plist */,
@@ -1316,7 +1328,7 @@
 				48789CDE1F24F291007D24CE /* CRNotificationsMedia.xcassets in Resources */,
 				48789CE01F24F291007D24CE /* gotham-medium.ttf in Resources */,
 				48CC55A81F58693C00ADB164 /* AMN.png in Resources */,
-				482998641F56CAD3009EEA7C /* local.db in Resources */,
+				48A721B5249633800060945F /* PlayerView.xib in Resources */,
 				48FE8B4921037FF600AA3DD3 /* HuCaChat_Dev-Info.plist in Resources */,
 				4812F0911F3A223F0039A011 /* ECDD.mp3 in Resources */,
 				4812F0891F3A223F0039A011 /* DM.mp3 in Resources */,
@@ -1354,7 +1366,6 @@
 				48939AD31EC76479004E459D /* CRNotificationsMedia.xcassets in Resources */,
 				F7B747481E50BAF200D93F2B /* gotham-medium.ttf in Resources */,
 				48CC55A71F58693C00ADB164 /* AMN.png in Resources */,
-				482998631F56CAD3009EEA7C /* local.db in Resources */,
 				4808806E2064AFCB008DD271 /* LaunchScreen.storyboard in Resources */,
 				4812F0901F3A223F0039A011 /* ECDD.mp3 in Resources */,
 				4812F0881F3A223F0039A011 /* DM.mp3 in Resources */,
@@ -1370,6 +1381,7 @@
 				484AC1F41F57EC3E0010B65E /* GoogleService-Info-Real.plist in Resources */,
 				4812F0961F3A223F0039A011 /* TMW.mp3 in Resources */,
 				4897CC6B1E6FE4BF00D07D7B /* Assets.xcassets in Resources */,
+				48A721B4249633800060945F /* PlayerView.xib in Resources */,
 				4812F0781F3A223F0039A011 /* AMN.mp3 in Resources */,
 				F79E46971E54608A005E8518 /* GoogleService-Info.plist in Resources */,
 				4812F07E1F3A223F0039A011 /* CCNM.mp3 in Resources */,
@@ -1444,12 +1456,14 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-				"${BUILT_PRODUCTS_DIR}/youtube-parser/youtube_parser.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper-swift/youtube_ios_player_helper_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1460,12 +1474,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_parser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1486,12 +1502,14 @@
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-				"${BUILT_PRODUCTS_DIR}/youtube-parser/youtube_parser.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper-swift/youtube_ios_player_helper_swift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -1502,12 +1520,14 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_parser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper_swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1588,6 +1608,7 @@
 				48789C7F1F24F291007D24CE /* RecentGroupChat.swift in Sources */,
 				480FED6E1F39A7CD00CDF17A /* SongCollectionCell.swift in Sources */,
 				48789C831F24F291007D24CE /* ChatSettingsViewController.swift in Sources */,
+				48A721C1249661850060945F /* DBHelper.swift in Sources */,
 				488779161F445649004D10D1 /* AboutCell.swift in Sources */,
 				48789C841F24F291007D24CE /* UIImageExtension.swift in Sources */,
 				4813026B1F48A12100B6EB2D /* PeopleCollectionCell.swift in Sources */,
@@ -1626,6 +1647,7 @@
 				48AA513D1F41A3AB005E7FA8 /* Genre.swift in Sources */,
 				48D343EC1F386AAB005FAFA3 /* HCKaraokeLyric.swift in Sources */,
 				4803C7E31F3DB946000392E5 /* Enum.swift in Sources */,
+				48A721C4249662F70060945F /* Song.swift in Sources */,
 				484AC1F61F57EE600010B65E /* CommonExtention.swift in Sources */,
 				483A34CA1F2AD695003C7747 /* PushModel.swift in Sources */,
 				48789CA01F24F291007D24CE /* CreateGroupViewController.swift in Sources */,
@@ -1638,6 +1660,7 @@
 				48789CA71F24F291007D24CE /* RightMenuViewController.swift in Sources */,
 				48D343EF1F386BD5005FAFA3 /* HCKaraokeLyricLabel.swift in Sources */,
 				4887790F1F444850004D10D1 /* ApplicationModel.swift in Sources */,
+				48A721AF249623990060945F /* PlayerView.swift in Sources */,
 				48789CA81F24F291007D24CE /* HidingViewController.swift in Sources */,
 				4803C7D31F3D66F3000392E5 /* HCPageMenu.swift in Sources */,
 				48789CA91F24F291007D24CE /* UIManager.swift in Sources */,
@@ -1720,6 +1743,7 @@
 				48AB09BB1EB99589000B3B60 /* StatusMessageViewController.swift in Sources */,
 				48789C771F22459E007D24CE /* HidingNavBarHelper.swift in Sources */,
 				480FED591F38BA6000CDF17A /* HCKaraokeLyricParser.swift in Sources */,
+				48A721C0249661850060945F /* DBHelper.swift in Sources */,
 				48840F8A1F31C573001EC226 /* LocationHelper.swift in Sources */,
 				4803C7D81F3DA709000392E5 /* MovieAppModel.swift in Sources */,
 				4887790E1F444850004D10D1 /* ApplicationModel.swift in Sources */,
@@ -1747,6 +1771,7 @@
 				480880662064AF53008DD271 /* AppDelegate.swift in Sources */,
 				F792E8281E47031900B9B9E2 /* RightMenuViewController.swift in Sources */,
 				48D343EE1F386BD5005FAFA3 /* HCKaraokeLyricLabel.swift in Sources */,
+				48A721C3249662F70060945F /* Song.swift in Sources */,
 				488779071F43EC9B004D10D1 /* SearchMovieViewController.swift in Sources */,
 				48789C791F2249C8007D24CE /* HidingViewController.swift in Sources */,
 				4803C7D21F3D66F3000392E5 /* HCPageMenu.swift in Sources */,
@@ -1782,6 +1807,7 @@
 				481C2FD01EB6165B00DC3310 /* AddUsersCell.swift in Sources */,
 				48C20F331EBB0A5400517B8C /* SwipeCell.swift in Sources */,
 				F7E9B1771E48C2950096F17E /* UIView+Helper.m in Sources */,
+				48A721AE249623990060945F /* PlayerView.swift in Sources */,
 				480FED5F1F399B3000CDF17A /* SongModel.swift in Sources */,
 				48F4BB941F21036B00A29AD7 /* NotificationHelper.swift in Sources */,
 				48840F901F31D433001EC226 /* MapViewController.swift in Sources */,
@@ -2036,7 +2062,7 @@
 					"$(PROJECT_DIR)/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Demo_Chat/SupportFiles/HuCaChat_Dev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"CHATDEV\"";
@@ -2078,7 +2104,7 @@
 					"$(PROJECT_DIR)/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Demo_Chat/SupportFiles/HuCaChat_Dev-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-D\" \"CHATDEV\"";
