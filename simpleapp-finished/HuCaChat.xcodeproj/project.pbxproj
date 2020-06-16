@@ -122,6 +122,7 @@
 		4867FB8A1F4C0B0F00FDCE03 /* NSBundle+LocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4867FB881F4C0B0F00FDCE03 /* NSBundle+LocalizedString.swift */; };
 		486B0EA51F5FF1B1007F84CC /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486B0EA41F5FF1B1007F84CC /* ForgotPasswordViewController.swift */; };
 		486B0EA61F5FF1B1007F84CC /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486B0EA41F5FF1B1007F84CC /* ForgotPasswordViewController.swift */; };
+		487600E024985B2300F81C66 /* HuCaChat_DevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 487600DF24985B2300F81C66 /* HuCaChat_DevUITests.swift */; };
 		48789C771F22459E007D24CE /* HidingNavBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48789C761F22459E007D24CE /* HidingNavBarHelper.swift */; };
 		48789C791F2249C8007D24CE /* HidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48789C781F2249C8007D24CE /* HidingViewController.swift */; };
 		48789C7D1F24F291007D24CE /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76623F71E63F987003CE3D7 /* UserModel.swift */; };
@@ -302,6 +303,16 @@
 		F9C42727C8F12B8F9800DEC3 /* Pods_HuCaChat_Release.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F162E9CEE4B428DBD599CAB /* Pods_HuCaChat_Release.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		487600E224985B2300F81C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F792E7EB1E42145300B9B9E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F792E7F21E42145300B9B9E2;
+			remoteInfo = HuCaChat_Dev;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		13E772F5C72FD39D70A9BDEE /* Pods-HuCaChat_Release.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_Release.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_Release/Pods-HuCaChat_Release.release.xcconfig"; sourceTree = "<group>"; };
 		16E646515627C3D6E969FF6A /* Pods-Demo_Chat_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Chat_Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Chat_Dev/Pods-Demo_Chat_Dev.release.xcconfig"; sourceTree = "<group>"; };
@@ -379,6 +390,9 @@
 		4867FB871F4C07BB00FDCE03 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		4867FB881F4C0B0F00FDCE03 /* NSBundle+LocalizedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSBundle+LocalizedString.swift"; sourceTree = "<group>"; };
 		486B0EA41F5FF1B1007F84CC /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		487600DD24985B2300F81C66 /* HuCaChat_DevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuCaChat_DevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		487600DF24985B2300F81C66 /* HuCaChat_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuCaChat_DevUITests.swift; sourceTree = "<group>"; };
+		487600E124985B2300F81C66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		48789C761F22459E007D24CE /* HidingNavBarHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HidingNavBarHelper.swift; sourceTree = "<group>"; };
 		48789C781F2249C8007D24CE /* HidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HidingViewController.swift; sourceTree = "<group>"; };
 		48789CEC1F24F291007D24CE /* HuCaChat_Release.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuCaChat_Release.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -479,6 +493,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		487600DA24985B2300F81C66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48789CD61F24F291007D24CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -754,6 +775,15 @@
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
+		487600DE24985B2300F81C66 /* HuCaChat_DevUITests */ = {
+			isa = PBXGroup;
+			children = (
+				487600DF24985B2300F81C66 /* HuCaChat_DevUITests.swift */,
+				487600E124985B2300F81C66 /* Info.plist */,
+			);
+			path = HuCaChat_DevUITests;
+			sourceTree = "<group>";
+		};
 		48789C751F22457E007D24CE /* HidingNavBarHelper */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,6 +1012,7 @@
 			children = (
 				48118AD31F428BFB00DE6223 /* Demo_Chat_Dev.entitlements */,
 				F792E7F51E42145300B9B9E2 /* Demo_Chat */,
+				487600DE24985B2300F81C66 /* HuCaChat_DevUITests */,
 				F792E7F41E42145300B9B9E2 /* Products */,
 				13B2C7D81EC7482BDBB3E217 /* Frameworks */,
 				450A1E98223E3055DF5B752C /* Pods */,
@@ -993,6 +1024,7 @@
 			children = (
 				F792E7F31E42145300B9B9E2 /* HuCaChat_Dev.app */,
 				48789CEC1F24F291007D24CE /* HuCaChat_Release.app */,
+				487600DD24985B2300F81C66 /* HuCaChat_DevUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1215,6 +1247,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		487600DC24985B2300F81C66 /* HuCaChat_DevUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 487600E624985B2300F81C66 /* Build configuration list for PBXNativeTarget "HuCaChat_DevUITests" */;
+			buildPhases = (
+				487600D924985B2300F81C66 /* Sources */,
+				487600DA24985B2300F81C66 /* Frameworks */,
+				487600DB24985B2300F81C66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				487600E324985B2300F81C66 /* PBXTargetDependency */,
+			);
+			name = HuCaChat_DevUITests;
+			productName = HuCaChat_DevUITests;
+			productReference = 487600DD24985B2300F81C66 /* HuCaChat_DevUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		48789C7A1F24F291007D24CE /* HuCaChat_Release */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48789CE91F24F291007D24CE /* Build configuration list for PBXNativeTarget "HuCaChat_Release" */;
@@ -1263,10 +1313,15 @@
 		F792E7EB1E42145300B9B9E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HungNV;
 				TargetAttributes = {
+					487600DC24985B2300F81C66 = {
+						CreatedOnToolsVersion = 11.3.1;
+						ProvisioningStyle = Manual;
+						TestTargetID = F792E7F21E42145300B9B9E2;
+					};
 					48789C7A1F24F291007D24CE = {
 						DevelopmentTeam = H4CR2L3EVK;
 						SystemCapabilities = {
@@ -1312,11 +1367,19 @@
 			targets = (
 				F792E7F21E42145300B9B9E2 /* HuCaChat_Dev */,
 				48789C7A1F24F291007D24CE /* HuCaChat_Release */,
+				487600DC24985B2300F81C66 /* HuCaChat_DevUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		487600DB24985B2300F81C66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48789CDD1F24F291007D24CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1595,6 +1658,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		487600D924985B2300F81C66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				487600E024985B2300F81C66 /* HuCaChat_DevUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		48789C7C1F24F291007D24CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1824,6 +1895,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		487600E324985B2300F81C66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F792E7F21E42145300B9B9E2 /* HuCaChat_Dev */;
+			targetProxy = 487600E224985B2300F81C66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		480880692064AFCB008DD271 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1854,6 +1933,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		487600E424985B2300F81C66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WN9FR2WF7Q;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HuCaChat_DevUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify.HuCaChat-DevUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "03a1e4f3-669b-43ef-97c4-90503fbd8adb";
+				PROVISIONING_PROFILE_SPECIFIER = hucachatuitest;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = HuCaChat_Dev;
+			};
+			name = Debug;
+		};
+		487600E524985B2300F81C66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = WN9FR2WF7Q;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HuCaChat_DevUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "asia.vitalify.HuCaChat-DevUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "03a1e4f3-669b-43ef-97c4-90503fbd8adb";
+				PROVISIONING_PROFILE_SPECIFIER = hucachatuitest;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = HuCaChat_Dev;
+			};
+			name = Release;
+		};
 		48789CEA1F24F291007D24CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1DD94242354A46A91BDB25A4 /* Pods-HuCaChat_Release.debug.xcconfig */;
@@ -2120,6 +2268,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		487600E624985B2300F81C66 /* Build configuration list for PBXNativeTarget "HuCaChat_DevUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				487600E424985B2300F81C66 /* Debug */,
+				487600E524985B2300F81C66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		48789CE91F24F291007D24CE /* Build configuration list for PBXNativeTarget "HuCaChat_Release" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
