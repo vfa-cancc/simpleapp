@@ -269,6 +269,8 @@
 		48FE8B4921037FF600AA3DD3 /* HuCaChat_Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485603101F24F60700A62606 /* HuCaChat_Dev-Info.plist */; };
 		48FF44E21F413DAD00A2852A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF44E11F413DAD00A2852A /* MovieCell.swift */; };
 		48FF44E31F413DAD00A2852A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF44E11F413DAD00A2852A /* MovieCell.swift */; };
+		54824FD1249872C3007DDDD3 /* HuCaChat_DevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54824FD0249872C3007DDDD3 /* HuCaChat_DevTests.swift */; };
+		54824FDF249875CE007DDDD3 /* HuCaChat_ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54824FDE249875CE007DDDD3 /* HuCaChat_ReleaseTests.swift */; };
 		776D757DDA86C470439D666E /* Pods_HuCaChat_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CA3430773798BFCD311CD9 /* Pods_HuCaChat_Dev.framework */; };
 		F7161A711E518225008C69F0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7161A701E518225008C69F0 /* Helper.swift */; };
 		F73527121E647DA200A4E4D1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73527111E647DA200A4E4D1 /* UIImageExtension.swift */; };
@@ -300,9 +302,28 @@
 		F7E9B1771E48C2950096F17E /* UIView+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = F7E9B1761E48C2950096F17E /* UIView+Helper.m */; };
 		F7F2B1EF1E67B443000B927E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F2B1EE1E67B443000B927E /* Message.swift */; };
 		F9C42727C8F12B8F9800DEC3 /* Pods_HuCaChat_Release.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F162E9CEE4B428DBD599CAB /* Pods_HuCaChat_Release.framework */; };
+		FE48682194DC21848EB7F41F /* Pods_HuCaChat_DevTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B86E346A3FA340E1BAAA67F1 /* Pods_HuCaChat_DevTests.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		54824FD3249872C3007DDDD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F792E7EB1E42145300B9B9E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F792E7F21E42145300B9B9E2;
+			remoteInfo = HuCaChat_Dev;
+		};
+		54824FE1249875CE007DDDD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F792E7EB1E42145300B9B9E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 48789C7A1F24F291007D24CE;
+			remoteInfo = HuCaChat_Release;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0588ED1192EF5EB7B0F97408 /* Pods-HuCaChat_DevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_DevTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_DevTests/Pods-HuCaChat_DevTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13E772F5C72FD39D70A9BDEE /* Pods-HuCaChat_Release.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_Release.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_Release/Pods-HuCaChat_Release.release.xcconfig"; sourceTree = "<group>"; };
 		16E646515627C3D6E969FF6A /* Pods-Demo_Chat_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Chat_Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Chat_Dev/Pods-Demo_Chat_Dev.release.xcconfig"; sourceTree = "<group>"; };
 		17FFB648BD50EED6537E3A41 /* Pods-HuCaChat_Dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_Dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_Dev/Pods-HuCaChat_Dev.release.xcconfig"; sourceTree = "<group>"; };
@@ -438,10 +459,18 @@
 		48EF33821F1E654100160A6F /* AnalyticsHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnalyticsHelper.swift; sourceTree = "<group>"; };
 		48F4BB931F21036B00A29AD7 /* NotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 		48FF44E11F413DAD00A2852A /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		54824FCE249872C3007DDDD3 /* HuCaChat_DevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuCaChat_DevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54824FD0249872C3007DDDD3 /* HuCaChat_DevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuCaChat_DevTests.swift; sourceTree = "<group>"; };
+		54824FD2249872C3007DDDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54824FDC249875CE007DDDD3 /* HuCaChat_ReleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuCaChat_ReleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54824FDE249875CE007DDDD3 /* HuCaChat_ReleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuCaChat_ReleaseTests.swift; sourceTree = "<group>"; };
+		54824FE0249875CE007DDDD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F162E9CEE4B428DBD599CAB /* Pods_HuCaChat_Release.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuCaChat_Release.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B657EE575435C1C68DF5B79 /* Pods-HuCaChat_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_Dev/Pods-HuCaChat_Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		88AB01D0A6A014464F6F60FC /* Pods-Demo_Chat_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Chat_Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Chat_Dev/Pods-Demo_Chat_Dev.debug.xcconfig"; sourceTree = "<group>"; };
+		B86E346A3FA340E1BAAA67F1 /* Pods_HuCaChat_DevTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuCaChat_DevTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C101C6141818D086C125248D /* Pods-Demo_Chat_Release.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Chat_Release.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Chat_Release/Pods-Demo_Chat_Release.debug.xcconfig"; sourceTree = "<group>"; };
+		C749EDD05C8E43D3152D2ECF /* Pods-HuCaChat_DevTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_DevTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_DevTests/Pods-HuCaChat_DevTests.release.xcconfig"; sourceTree = "<group>"; };
 		DF08F4A4B61E6981A22023FF /* Pods-Demo_Chat_Release.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Chat_Release.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Chat_Release/Pods-Demo_Chat_Release.release.xcconfig"; sourceTree = "<group>"; };
 		F7161A701E518225008C69F0 /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		F73527111E647DA200A4E4D1 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
@@ -494,6 +523,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54824FCB249872C3007DDDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE48682194DC21848EB7F41F /* Pods_HuCaChat_DevTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54824FD9249875CE007DDDD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F792E7F01E42145300B9B9E2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -528,6 +572,7 @@
 				48AC9B741EE3F0FD00D73634 /* FacebookSDK */,
 				44CA3430773798BFCD311CD9 /* Pods_HuCaChat_Dev.framework */,
 				5F162E9CEE4B428DBD599CAB /* Pods_HuCaChat_Release.framework */,
+				B86E346A3FA340E1BAAA67F1 /* Pods_HuCaChat_DevTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -543,6 +588,8 @@
 				17FFB648BD50EED6537E3A41 /* Pods-HuCaChat_Dev.release.xcconfig */,
 				1DD94242354A46A91BDB25A4 /* Pods-HuCaChat_Release.debug.xcconfig */,
 				13E772F5C72FD39D70A9BDEE /* Pods-HuCaChat_Release.release.xcconfig */,
+				0588ED1192EF5EB7B0F97408 /* Pods-HuCaChat_DevTests.debug.xcconfig */,
+				C749EDD05C8E43D3152D2ECF /* Pods-HuCaChat_DevTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -941,6 +988,24 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		54824FCF249872C3007DDDD3 /* HuCaChat_DevTests */ = {
+			isa = PBXGroup;
+			children = (
+				54824FD0249872C3007DDDD3 /* HuCaChat_DevTests.swift */,
+				54824FD2249872C3007DDDD3 /* Info.plist */,
+			);
+			path = HuCaChat_DevTests;
+			sourceTree = "<group>";
+		};
+		54824FDD249875CE007DDDD3 /* HuCaChat_ReleaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				54824FDE249875CE007DDDD3 /* HuCaChat_ReleaseTests.swift */,
+				54824FE0249875CE007DDDD3 /* Info.plist */,
+			);
+			path = HuCaChat_ReleaseTests;
+			sourceTree = "<group>";
+		};
 		F74741651E66DA7300E9EA43 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
@@ -982,6 +1047,8 @@
 			children = (
 				48118AD31F428BFB00DE6223 /* Demo_Chat_Dev.entitlements */,
 				F792E7F51E42145300B9B9E2 /* Demo_Chat */,
+				54824FCF249872C3007DDDD3 /* HuCaChat_DevTests */,
+				54824FDD249875CE007DDDD3 /* HuCaChat_ReleaseTests */,
 				F792E7F41E42145300B9B9E2 /* Products */,
 				13B2C7D81EC7482BDBB3E217 /* Frameworks */,
 				450A1E98223E3055DF5B752C /* Pods */,
@@ -993,6 +1060,8 @@
 			children = (
 				F792E7F31E42145300B9B9E2 /* HuCaChat_Dev.app */,
 				48789CEC1F24F291007D24CE /* HuCaChat_Release.app */,
+				54824FCE249872C3007DDDD3 /* HuCaChat_DevTests.xctest */,
+				54824FDC249875CE007DDDD3 /* HuCaChat_ReleaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -1236,6 +1305,44 @@
 			productReference = 48789CEC1F24F291007D24CE /* HuCaChat_Release.app */;
 			productType = "com.apple.product-type.application";
 		};
+		54824FCD249872C3007DDDD3 /* HuCaChat_DevTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54824FD7249872C3007DDDD3 /* Build configuration list for PBXNativeTarget "HuCaChat_DevTests" */;
+			buildPhases = (
+				E58582802A744A72D9CAEE87 /* [CP] Check Pods Manifest.lock */,
+				54824FCA249872C3007DDDD3 /* Sources */,
+				54824FCB249872C3007DDDD3 /* Frameworks */,
+				54824FCC249872C3007DDDD3 /* Resources */,
+				8CC4AC15EE7637038A00A850 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54824FD4249872C3007DDDD3 /* PBXTargetDependency */,
+			);
+			name = HuCaChat_DevTests;
+			productName = HuCaChat_DevTests;
+			productReference = 54824FCE249872C3007DDDD3 /* HuCaChat_DevTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		54824FDB249875CE007DDDD3 /* HuCaChat_ReleaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54824FE5249875CE007DDDD3 /* Build configuration list for PBXNativeTarget "HuCaChat_ReleaseTests" */;
+			buildPhases = (
+				54824FD8249875CE007DDDD3 /* Sources */,
+				54824FD9249875CE007DDDD3 /* Frameworks */,
+				54824FDA249875CE007DDDD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54824FE2249875CE007DDDD3 /* PBXTargetDependency */,
+			);
+			name = HuCaChat_ReleaseTests;
+			productName = HuCaChat_ReleaseTests;
+			productReference = 54824FDC249875CE007DDDD3 /* HuCaChat_ReleaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F792E7F21E42145300B9B9E2 /* HuCaChat_Dev */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F792E8051E42145300B9B9E2 /* Build configuration list for PBXNativeTarget "HuCaChat_Dev" */;
@@ -1263,7 +1370,7 @@
 		F792E7EB1E42145300B9B9E2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = HungNV;
 				TargetAttributes = {
@@ -1274,6 +1381,16 @@
 								enabled = 1;
 							};
 						};
+					};
+					54824FCD249872C3007DDDD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F792E7F21E42145300B9B9E2;
+					};
+					54824FDB249875CE007DDDD3 = {
+						CreatedOnToolsVersion = 11.4.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 48789C7A1F24F291007D24CE;
 					};
 					F792E7F21E42145300B9B9E2 = {
 						CreatedOnToolsVersion = 8.2;
@@ -1312,6 +1429,8 @@
 			targets = (
 				F792E7F21E42145300B9B9E2 /* HuCaChat_Dev */,
 				48789C7A1F24F291007D24CE /* HuCaChat_Release */,
+				54824FCD249872C3007DDDD3 /* HuCaChat_DevTests */,
+				54824FDB249875CE007DDDD3 /* HuCaChat_ReleaseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1352,6 +1471,20 @@
 				48CC55AC1F58693C00ADB164 /* DADM.png in Resources */,
 				48CC55AA1F58693C00ADB164 /* CCNM.png in Resources */,
 				4812F0991F3A223F0039A011 /* VTCS.lrc in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54824FCC249872C3007DDDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54824FDA249875CE007DDDD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1451,7 +1584,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-HuCaChat_Dev/Pods-HuCaChat_Dev-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EZAlertController/EZAlertController.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -1469,7 +1601,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAlertController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -1497,7 +1628,6 @@
 				"${PODS_ROOT}/Target Support Files/Pods-HuCaChat_Release/Pods-HuCaChat_Release-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EZAlertController/EZAlertController.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
@@ -1515,7 +1645,6 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAlertController.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
@@ -1554,6 +1683,26 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuCaChat_Release/Pods-HuCaChat_Release-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8CC4AC15EE7637038A00A850 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HuCaChat_DevTests/Pods-HuCaChat_DevTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuCaChat_DevTests/Pods-HuCaChat_DevTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B264FCC329155D4245FED0C2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1590,6 +1739,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HuCaChat_Dev/Pods-HuCaChat_Dev-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E58582802A744A72D9CAEE87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HuCaChat_DevTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -1705,6 +1876,22 @@
 				48789CD31F24F291007D24CE /* Helper.swift in Sources */,
 				486B0EA61F5FF1B1007F84CC /* ForgotPasswordViewController.swift in Sources */,
 				4829985A1F569FC7009EEA7C /* LocalDB.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54824FCA249872C3007DDDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54824FD1249872C3007DDDD3 /* HuCaChat_DevTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54824FD8249875CE007DDDD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54824FDF249875CE007DDDD3 /* HuCaChat_ReleaseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1824,6 +2011,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		54824FD4249872C3007DDDD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F792E7F21E42145300B9B9E2 /* HuCaChat_Dev */;
+			targetProxy = 54824FD3249872C3007DDDD3 /* PBXContainerItemProxy */;
+		};
+		54824FE2249875CE007DDDD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 48789C7A1F24F291007D24CE /* HuCaChat_Release */;
+			targetProxy = 54824FE1249875CE007DDDD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		480880692064AFCB008DD271 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -1937,6 +2137,134 @@
 				PROVISIONING_PROFILE_SPECIFIER = HuCaChat;
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo_Chat/SupportFiles/Demo_Chat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		54824FD5249872C3007DDDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0588ED1192EF5EB7B0F97408 /* Pods-HuCaChat_DevTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52LV6A2Q7J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HuCaChat_DevTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vfa.asia.HuCaChat-DevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuCaChat_Dev.app/HuCaChat_Dev";
+			};
+			name = Debug;
+		};
+		54824FD6249872C3007DDDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C749EDD05C8E43D3152D2ECF /* Pods-HuCaChat_DevTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52LV6A2Q7J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HuCaChat_DevTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vfa.asia.HuCaChat-DevTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuCaChat_Dev.app/HuCaChat_Dev";
+			};
+			name = Release;
+		};
+		54824FE3249875CE007DDDD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52LV6A2Q7J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HuCaChat_ReleaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vfa.asia.HuCaChat-ReleaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuCaChat_Release.app/HuCaChat_Release";
+			};
+			name = Debug;
+		};
+		54824FE4249875CE007DDDD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 52LV6A2Q7J;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = HuCaChat_ReleaseTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "vfa.asia.HuCaChat-ReleaseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuCaChat_Release.app/HuCaChat_Release";
 			};
 			name = Release;
 		};
@@ -2125,6 +2453,24 @@
 			buildConfigurations = (
 				48789CEA1F24F291007D24CE /* Debug */,
 				48789CEB1F24F291007D24CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54824FD7249872C3007DDDD3 /* Build configuration list for PBXNativeTarget "HuCaChat_DevTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54824FD5249872C3007DDDD3 /* Debug */,
+				54824FD6249872C3007DDDD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54824FE5249875CE007DDDD3 /* Build configuration list for PBXNativeTarget "HuCaChat_ReleaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54824FE3249875CE007DDDD3 /* Debug */,
+				54824FE4249875CE007DDDD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

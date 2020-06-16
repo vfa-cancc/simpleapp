@@ -57,8 +57,18 @@ end
 
 target 'HuCaChat_Dev' do
     demo_chat_frameworks
+    target 'HuCaChat_DevTests' do
+      inherit! :search_paths
+      pod 'Quick'
+      pod 'Nimble'
+    end
 end
 
 target 'HuCaChat_Release' do
     demo_chat_frameworks
+    target 'HuCaChat_ReleaseTests' do
+      inherit! :search_paths
+      pod 'Quick'
+      pod 'Nimble'
+    end
 end
