@@ -61,6 +61,16 @@
                </Test>
             </SkippedTests>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "54874F342499B823007D9CBB"
+               BuildableName = "HuCaChat_DevTests.xctest"
+               BlueprintName = "HuCaChat_DevTests"
+               ReferencedContainer = "container:HuCaChat.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

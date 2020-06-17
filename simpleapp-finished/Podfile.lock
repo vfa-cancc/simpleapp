@@ -41,9 +41,6 @@ PODS:
   - FirebaseStorage (3.0.0):
     - FirebaseCore (~> 5.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FMDB (2.7.2):
-    - FMDB/standard (= 2.7.2)
-  - FMDB/standard (2.7.2)
   - Google-Mobile-Ads-SDK (7.31.0)
   - GoogleAnalytics (3.17.0)
   - GoogleMaps (2.7.0):
@@ -63,6 +60,8 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - NCMB (2.4.3)
+  - Nimble (8.1.1)
+  - Quick (3.0.0)
   - Realm (3.19.1):
     - Realm/Headers (= 3.19.1)
   - Realm/Headers (3.19.1)
@@ -89,11 +88,12 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Storage
-  - FMDB
   - GoogleAnalytics
   - GoogleMaps
   - Kingfisher
   - NCMB (from `https://github.com/NIFTYCloud-mbaas/ncmb_ios.git`)
+  - Nimble
+  - Quick
   - Realm (~> 3.19.0)
   - RealmSwift (~> 3.19.0)
   - SnapKit
@@ -102,7 +102,7 @@ DEPENDENCIES:
   - youtube-ios-player-helper-swift
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - Alamofire
     - Crashlytics
     - EZAlertController
@@ -114,7 +114,6 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseInstanceID
     - FirebaseStorage
-    - FMDB
     - Google-Mobile-Ads-SDK
     - GoogleAnalytics
     - GoogleMaps
@@ -123,14 +122,15 @@ SPEC REPOS:
     - Kingfisher
     - leveldb-library
     - nanopb
+    - Nimble
+    - Quick
+    - Realm
+    - RealmSwift
     - SnapKit
     - Socket.IO-Client-Swift
     - Starscream
     - TwitterCore
     - TwitterKit
-  trunk:
-    - Realm
-    - RealmSwift
     - youtube-ios-player-helper-swift
 
 EXTERNAL SOURCES:
@@ -154,7 +154,6 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
   FirebaseInstanceID: f3f0657372592ecdfdfe2cac604a5a75758376a6
   FirebaseStorage: 7ca4bb7b58a25fa647b04f524033fc7cb7eb272b
-  FMDB: 6198a90e7b6900cfc046e6bc0ef6ebb7be9236aa
   Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
@@ -164,6 +163,8 @@ SPEC CHECKSUMS:
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   NCMB: 7b88a86be4a770bd260f42295c7649b00f57f178
+  Nimble: 5f8a2fb6fa343a7242dfdd9d42f7267419d464b2
+  Quick: 6d9559f40647bc4d510103842ef2fdd882d753e2
   Realm: fb377747e694c7deb62d402400454134fe321bee
   RealmSwift: 1302b0ab60f3105a2b214a735eeb0938607cf16b
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
@@ -173,6 +174,6 @@ SPEC CHECKSUMS:
   TwitterKit: 3b6044a7320340326a4098f3e37aa1dbaeb94942
   youtube-ios-player-helper-swift: 51a3c5325317c8271d0c7985c1bbe5a252ffb2fd
 
-PODFILE CHECKSUM: a8dacd85ac17d3bb698885cd876737680bc58454
+PODFILE CHECKSUM: 0bd25aa981d7cb1a028f1df8688e9675b8047eca
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.9.3
