@@ -1,0 +1,6 @@
+framework module Pods_HuCaChat_DevTests {
+  umbrella header "Pods-HuCaChat_DevTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
