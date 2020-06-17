@@ -439,12 +439,13 @@ extension HomeViewController: ContactCellDelegate {
         if let value = Helper.shared.getUserDefault(key: kShowAdMod) as? Int  {
             numShowAdMob = value + 1
             Helper.shared.saveUserDefault(key: kShowAdMod, value: numShowAdMob)
-            if numShowAdMob % 3 == 0 {
+            ///TODO: Comment AdMob
+            /*if numShowAdMob % 3 == 0 {
                 GoogleAdMobHelper.shared.showInterstitial()
                 isShowAds = true
             } else {
                 isShowAds = false
-            }
+            }*/
         } else {
             numShowAdMob += 1
             Helper.shared.saveUserDefault(key: kShowAdMod, value: numShowAdMob)

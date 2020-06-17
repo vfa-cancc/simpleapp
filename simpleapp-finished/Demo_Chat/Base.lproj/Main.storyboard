@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jdx-iA-cyy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jdx-iA-cyy">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -139,6 +139,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="tableView"/>
+                                </userDefinedRuntimeAttributes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1700,6 +1703,9 @@
                                                     </connections>
                                                 </collectionViewCell>
                                             </cells>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="collectionView"/>
+                                            </userDefinedRuntimeAttributes>
                                         </collectionView>
                                         <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="Aot-d9-UqS">
                                             <rect key="frame" x="176" y="592" width="23" height="37"/>
@@ -1720,6 +1726,7 @@
                                                 </view>
                                                 <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="rSQ-75-23R">
                                                     <rect key="frame" x="53" y="53" width="269" height="31"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="sldTime"/>
                                                     <color key="minimumTrackTintColor" red="0.97254901959999995" green="0.90980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <connections>
@@ -1743,6 +1750,7 @@
                                                     <subviews>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jI6-Km-ZyX">
                                                             <rect key="frame" x="98" y="0.0" width="60" height="60"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="btnPlay"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="60" id="EvM-U1-K1O"/>
                                                                 <constraint firstAttribute="width" constant="60" id="XDJ-A3-0QT"/>
@@ -3014,6 +3022,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U8p-62-eX8">
                                         <rect key="frame" x="335" y="6.6666666666666288" width="32" height="32"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="btnSend"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="U8p-62-eX8" secondAttribute="height" multiplier="1:1" id="Clb-sg-Lyg"/>
                                             <constraint firstAttribute="width" constant="32" id="Giy-2D-7gH"/>
@@ -3026,6 +3035,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9TE-dn-vVs">
                                         <rect key="frame" x="48" y="5" width="279" height="35"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="tvInputMessage"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="900" constant="35" id="1ac-0Q-8To"/>
                                         </constraints>
@@ -3289,7 +3299,7 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XiX-2m-ywc" customClass="TagListView" customModule="HuCaChat_Dev" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="265" width="315" height="22"/>
+                                        <rect key="frame" x="30" y="265" width="315" height="25"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" priority="100" constant="25" id="GdG-jd-71V"/>
@@ -3335,14 +3345,14 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovI-Wp-feO" userLabel="line">
-                                        <rect key="frame" x="30" y="295" width="315" height="2"/>
+                                        <rect key="frame" x="30" y="298" width="315" height="2"/>
                                         <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="2" id="eut-OX-RI1"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UwW-JF-IcM">
-                                        <rect key="frame" x="25" y="327" width="140" height="40"/>
+                                        <rect key="frame" x="25" y="330" width="140" height="40"/>
                                         <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="Ya4-YJ-tX6"/>
@@ -3358,7 +3368,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7cU-qy-OEx">
-                                        <rect key="frame" x="210" y="327" width="140" height="40"/>
+                                        <rect key="frame" x="210" y="330" width="140" height="40"/>
                                         <color key="backgroundColor" red="0.90980392160000001" green="0.90980392160000001" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="140" id="fNC-Ni-gUe"/>
@@ -3462,6 +3472,7 @@
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TVm-zi-DeU">
                                         <rect key="frame" x="50" y="16" width="270" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="tfUsername"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="3CE-eY-EIY"/>
                                         </constraints>
@@ -3518,6 +3529,7 @@
                                     </view>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7ao-F9-QPj">
                                         <rect key="frame" x="50" y="16" width="270" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="tfPassword"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="s8v-UF-rbH"/>
                                         </constraints>
@@ -3600,6 +3612,7 @@
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzu-zF-51S">
                                 <rect key="frame" x="20" y="559" width="335" height="56"/>
+                                <accessibility key="accessibilityConfiguration" identifier="btnLogin"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="56" id="hip-2q-v1Z"/>
                                 </constraints>
@@ -3957,6 +3970,7 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2E-Hk-EKd">
                                                     <rect key="frame" x="30" y="682" width="240" height="50"/>
                                                     <color key="backgroundColor" red="0.87637555599999994" green="0.2078308016" blue="0.13616921009999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="btnLogout"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="wp1-vS-h49"/>
                                                     </constraints>
@@ -4107,6 +4121,9 @@
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="tableView"/>
+                                        </userDefinedRuntimeAttributes>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>

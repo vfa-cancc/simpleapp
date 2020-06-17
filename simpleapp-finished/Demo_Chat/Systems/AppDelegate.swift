@@ -26,6 +26,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        /// Reset all key
+        if AppDelegate.isUITestingEnabled {
+            self.setUseDefaults()
+        }
+        
         NCMB.setApplicationKey(MBAAS_APP_KEY, clientKey: MBAAS_CLIENT_KEY)
         self.requestNotification(application: application)
         
@@ -267,5 +272,41 @@ extension AppDelegate {
             let isOK = error == nil ? true : false
             completionHandler(isOK)
         }
+    }
+}
+
+//MARK:- Reset key UserDefault for UITest
+extension AppDelegate {
+    static let uiTestingKeyPrefix = "UI-TestingKey_"
+    static var isUITestingEnabled: Bool {
+        get {
+            return ProcessInfo.processInfo.arguments.contains("UI-Testing")
+        }
+    }
+    
+    private func setUseDefaults() {
+        for (key, value) in ProcessInfo.processInfo.environment where key.hasPrefix(AppDelegate.uiTestingKeyPrefix) {
+            let userDefaultsKey = key.truncateUITestingKey()
+            switch value {
+            case "YES":
+                ///UserDefaults.standard.set(true, forKey: userDefaultsKey)
+                Helper.shared.saveUserDefault(key: kUserInfo, value: ["user_id": "xxxx", "email": "xxx.xxxxxx@gmail.com", "pass": "xxxxxx"])
+            case "NO":
+                ///UserDefaults.standard.set(false, forKey: userDefaultsKey)
+                Helper.shared.removeUserDefault(key: kUserInfo)
+            default:
+                UserDefaults.standard.set(value, forKey: userDefaultsKey)
+            }
+        }
+    }
+}
+
+extension String {
+    func truncateUITestingKey() -> String {
+        if let range = self.range(of: AppDelegate.uiTestingKeyPrefix) {
+            let userDefaultsKey = self[range.upperBound...]
+            return String(userDefaultsKey)
+        }
+        return self
     }
 }

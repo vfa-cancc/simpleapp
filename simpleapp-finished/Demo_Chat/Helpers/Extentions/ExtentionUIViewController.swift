@@ -71,7 +71,7 @@ extension UIViewController {
     func setupNavigationBar(vc: UIViewController, title: String? = nil, leftText: String? = nil, leftImg: UIImage? = nil, leftSelector: Selector? = nil, rightText: String? = nil, rightImg: UIImage? = nil, rightSelector: Selector? = nil, isDarkBackground: Bool? = false, isTransparent: Bool? = false) -> Void {
         
         vc.navigationItem.hidesBackButton = true
-        
+        vc.navigationController?.navigationBar.accessibilityIdentifier = "navigationBar"
         if title != nil {
             vc.navigationItem.title = title
             vc.navigationController?.isNavigationBarHidden = false
@@ -87,9 +87,15 @@ extension UIViewController {
         
         //Left
         if leftImg != nil && leftSelector != nil {
-            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(image: leftImg, style: .plain, target: vc, action: leftSelector)
+            let leftBar = UIBarButtonItem(image: leftImg, style: .plain, target: vc, action: leftSelector)
+            leftBar.accessibilityLabel = "leftBar"
+            
+            vc.navigationItem.leftBarButtonItem = leftBar
         } else if leftText != nil && leftSelector != nil {
-            vc.navigationItem.leftBarButtonItem = UIBarButtonItem(title: leftText, style: .plain, target: vc, action: leftSelector)
+            let leftBar = UIBarButtonItem(title: leftText, style: .plain, target: vc, action: leftSelector)
+            leftBar.accessibilityLabel = "leftBar"
+            
+            vc.navigationItem.leftBarButtonItem = leftBar
             vc.navigationItem.leftBarButtonItem?.tintColor = UIColor.black
             vc.navigationItem.leftBarButtonItem?.setTitleTextAttributes(textAttributes, for: .normal)
         } else {
@@ -98,9 +104,15 @@ extension UIViewController {
         
         //Right
         if rightImg != nil && rightSelector != nil {
-            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(image: rightImg, style: .plain, target: vc, action: rightSelector)
+            let rightBar = UIBarButtonItem(image: rightImg, style: .plain, target: vc, action: rightSelector)
+            rightBar.accessibilityLabel = "rightBar"
+            
+            vc.navigationItem.rightBarButtonItem = rightBar
         } else if rightText != nil && rightSelector != nil {
-            vc.navigationItem.rightBarButtonItem = UIBarButtonItem(title: rightText, style: .plain, target: vc, action: rightSelector)
+            let rightBar = UIBarButtonItem(title: rightText, style: .plain, target: vc, action: rightSelector)
+            rightBar.accessibilityLabel = "rightBar"
+            
+            vc.navigationItem.rightBarButtonItem = rightBar
             vc.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
             vc.navigationItem.rightBarButtonItem?.setTitleTextAttributes(textAttributes, for: .normal)
         } else {

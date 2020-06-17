@@ -51,6 +51,7 @@ class BottomMenuView: UIView {
         btn.addTarget(self, action: #selector(self.tappedBtnHome(btn:)), for: .touchUpInside)
         btn.setImage(#imageLiteral(resourceName: "tabbar_chat_off"), for: .normal)
         btn.setImage(#imageLiteral(resourceName: "tabbar_chat_on"), for: .selected)
+        btn.accessibilityIdentifier = "btnHomeBar"
         
         return btn
     }()
@@ -60,6 +61,7 @@ class BottomMenuView: UIView {
         btn.addTarget(self, action: #selector(self.tappedBtnCalendar(btn:)), for: .touchUpInside)
         btn.setImage(#imageLiteral(resourceName: "tabbar_group_off"), for: .normal)
         btn.setImage(#imageLiteral(resourceName: "tabbar_group_on"), for: .selected)
+        btn.accessibilityIdentifier = "btnCalendarBar"
         
         return btn
     }()
@@ -68,9 +70,9 @@ class BottomMenuView: UIView {
         let btn = UIButton()
         btn.addTarget(self, action: #selector(self.tappedBtnCenter(btn:)), for: .touchUpInside)
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_center"), with: Theme.shared.color_Dark_App())
-        
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
+        btn.accessibilityIdentifier = "btnCenterBar"
         
         return btn
     }()
@@ -80,6 +82,7 @@ class BottomMenuView: UIView {
         btn.addTarget(self, action: #selector(self.tappedBtnAlart(btn:)), for: .touchUpInside)
         btn.setImage(#imageLiteral(resourceName: "tabbar_notification_off"), for: .normal)
         btn.setImage(#imageLiteral(resourceName: "tabbar_notification_on"), for: .selected)
+        btn.accessibilityIdentifier = "btnAlartBar"
         
         return btn
     }()
@@ -89,6 +92,7 @@ class BottomMenuView: UIView {
         btn.addTarget(self, action: #selector(self.tappedBtnSetting(btn:)), for: .touchUpInside)
         btn.setImage(#imageLiteral(resourceName: "tabbar_more_off"), for: .normal)
         btn.setImage(#imageLiteral(resourceName: "tabbar_more_on"), for: .selected)
+        btn.accessibilityIdentifier = "btnSettingBar"
         
         return btn
     }()
@@ -113,6 +117,7 @@ class BottomMenuView: UIView {
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
+        btn.accessibilityIdentifier = "btnContactBar"
         
         return btn
     }()
@@ -123,6 +128,7 @@ class BottomMenuView: UIView {
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
+        btn.accessibilityIdentifier = "btnVideoBar"
         
         return btn
     }()
@@ -133,6 +139,7 @@ class BottomMenuView: UIView {
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
+        btn.accessibilityIdentifier = "btnCameraBar"
         
         return btn
     }()
@@ -143,6 +150,7 @@ class BottomMenuView: UIView {
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
+        btn.accessibilityIdentifier = "btnCheckInBar"
         
         return btn
     }()
@@ -153,6 +161,7 @@ class BottomMenuView: UIView {
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
+        btn.accessibilityIdentifier = "btnCheckOutBar"
         
         return btn
     }()
