@@ -2,7 +2,7 @@
 //  HuCaChat_ReleaseTests.swift
 //  HuCaChat_ReleaseTests
 //
-//  Created by chau nguyen on 6/16/20.
+//  Created by chau nguyen on 6/17/20.
 //  Copyright © 2020 HungNV. All rights reserved.
 //
 
