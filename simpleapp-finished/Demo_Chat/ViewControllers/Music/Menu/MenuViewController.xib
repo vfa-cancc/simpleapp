@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="HuCaChat_Dev" customModuleProvider="target">
+            <connections>
+                <outlet property="btnChangePassword" destination="VQm-Mq-m0e" id="zAO-Y0-Kz8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="THd-50-0k2">
+                    <rect key="frame" x="0.0" y="10" width="414" height="225"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQm-Mq-m0e">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="112.5"/>
+                            <state key="normal" title="Edit"/>
+                            <connections>
+                                <action selector="onPressEdit:" destination="-1" eventType="touchUpInside" id="n6x-Ek-NsK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WCP-0w-x6c">
+                            <rect key="frame" x="0.0" y="112.5" width="414" height="112.5"/>
+                            <state key="normal" title="Delete">
+                                <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressDelete:" destination="-1" eventType="touchUpInside" id="7t7-ef-bIT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="THd-50-0k2" secondAttribute="trailing" id="clU-fH-qsQ"/>
+                <constraint firstAttribute="bottom" secondItem="THd-50-0k2" secondAttribute="bottom" id="e6e-qp-SeB"/>
+                <constraint firstItem="THd-50-0k2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rwe-qc-XTg"/>
+                <constraint firstItem="THd-50-0k2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="10" id="xva-NL-lQ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="131.8840579710145" y="388.72767857142856"/>
+        </view>
+    </objects>
+</document>
