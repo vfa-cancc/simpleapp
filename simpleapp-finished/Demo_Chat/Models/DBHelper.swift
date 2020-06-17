@@ -53,22 +53,15 @@ class DBHelper {
         }
     }
     
-    func removeObject<T: Object>(type: T.Type, id: Any) {
+    func removeObject<T: Object>(type: T.Type, id: Any) -> Bool {
         let objectTemp = self.database.object(ofType: type, forPrimaryKey: id)
         if objectTemp != nil {
             try! self.database.write {
                 self.database.delete(objectTemp!)
             }
+            return true
         }
-    }
-
-    func removeObject<T: Object, V: Codable>(type: T.Type, value: V) {
-        let objectTemp = self.database.object(ofType: type, forPrimaryKey: value)
-        if objectTemp != nil {
-            try! self.database.write {
-                self.database.delete(objectTemp!)
-            }
-        }
+        return false
     }
 
     func filter<T:Object, K: Codable>(objectType: T.Type, key: String, value: K) -> [T]{
@@ -83,7 +76,7 @@ class DBHelper {
         return _objects
     }
     
-    func filterById<T:Object, K: Codable>(objectType: T.Type, value: K) -> T? {
+    func filterById<T:Object>(objectType: T.Type, value: Any) -> T? {
         let object = database.object(ofType: objectType, forPrimaryKey: value)
         return object
     }
@@ -91,6 +84,15 @@ class DBHelper {
     func addObject<T:Object>(value: T) {
         try! database.write {
             database.add(value, update: Realm.UpdatePolicy.all)
+        }
+    }
+    
+    func updateObject<T: Object>(id: String, type: T.Type, update: @escaping (T) -> ()) {
+        let data = self.filterById(objectType: type, value: id)
+        if let firstObject = data {
+            try! database.write {
+                update(firstObject)
+            }
         }
     }
     

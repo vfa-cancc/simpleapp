@@ -112,11 +112,27 @@ class MusicViewController: BaseViewController {
     }
     
     func setupNavigation() {
-        setupNavigationBar(vc: self, title: Define.shared.getNameMusicScreen().uppercased(), leftText: nil, leftImg: #imageLiteral(resourceName: "arrow_back"), leftSelector: #selector(self.actBack(btn:)), rightText: nil, rightImg: #imageLiteral(resourceName: "icon_search"), rightSelector: #selector(self.actSearch(btn:)), isDarkBackground: true, isTransparent: true)
+        setupNavigationBar(vc: self, title: Define.shared.getNameMusicScreen().uppercased(), leftText: nil, leftImg: #imageLiteral(resourceName: "arrow_back"), leftSelector: #selector(self.actBack(btn:)), rightText: nil, rightImg: nil, rightSelector: nil, isDarkBackground: true, isTransparent: true)
+        addTwoButtonToNavigation(image1: #imageLiteral(resourceName: "tabbar_more_off"), action1: #selector(self.actMoreInfo(btn:)), image2: #imageLiteral(resourceName: "icon_search"), action2: #selector(self.actSearch(btn:)))
     }
     
     @objc func actBack(btn: UIButton) {
         _ = navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func actMoreInfo(btn: UIButton) {
+        let popoverContent = MenuViewController()
+        popoverContent.delegate = self
+        popoverContent.modalPresentationStyle = UIModalPresentationStyle.popover
+        popoverContent.modalTransitionStyle = .coverVertical
+        if let popover = popoverContent.popoverPresentationController {
+            popoverContent.preferredContentSize = CGSize(width: 150, height: 80)
+            popover.permittedArrowDirections = [.up]
+            popover.sourceView = self.view
+            popover.sourceRect = CGRect(x: UIScreen.main.bounds.width - 30, y: self.navigationController?.navigationBar.frame.height ?? 60, width: 0, height: 0)
+            popover.delegate = self
+            self.present(popoverContent, animated: true, completion: nil)
+        }
     }
     
     @objc func actSearch(btn: UIButton) {
@@ -408,5 +424,53 @@ extension MusicViewController: AVAudioPlayerDelegate {
         if flag {
             self.actNextSong(btnNext)
         }
+    }
+}
+
+extension MusicViewController : UIPopoverPresentationControllerDelegate {
+    public func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
+    }
+}
+
+extension MusicViewController : MenuDelegate {
+    
+    func onClickEdit() {
+        self.showAlertEdit { (text) in
+            if (!text.isEmpty) {
+                LocalDB.shared().changeNameMusicLocalDB(id: arrSong[self.position].id, name: text) { [weak self] (result) in
+                    guard let self = self else { return }
+                    arrSong[self.position].title = text
+                    self.collectionView.reloadData()
+                }
+            }
+        }
+    }
+    
+    func onClickDelete() {
+        self.showConfirm(title: "Notification", message: "Do you want to delete ???") {
+            LocalDB.shared().removeMusicInLocalDB(id: arrSong[self.position].id) { [weak self](_) in
+                guard let self = self else { return }
+                DispatchQueue.main.async {
+                    arrSong.remove(at: self.position)
+                    self.collectionView.reloadData()
+                }
+            }
+        }
+    }
+    
+    func showAlertEdit(confirm: @escaping (String) -> ()) {
+        let alert = UIAlertController(title: "Music", message: "Name music", preferredStyle: .alert)
+        alert.addTextField { (tf) in
+            tf.placeholder = "Enter new name"
+        }
+        alert.addAction(UIAlertAction(title: "Close", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Confirm", style: .destructive, handler: { (_) in
+            if let tf = alert.textFields?.first {
+                let newName = tf.text ?? ""
+                confirm(newName)
+            }
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }

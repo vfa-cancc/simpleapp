@@ -274,6 +274,10 @@
 		48FF44E31F413DAD00A2852A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF44E11F413DAD00A2852A /* MovieCell.swift */; };
 		54874F382499B823007D9CBB /* HuCaChat_DevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54874F372499B823007D9CBB /* HuCaChat_DevTests.swift */; };
 		54874F462499B8C0007D9CBB /* HuCaChat_ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54874F452499B8C0007D9CBB /* HuCaChat_ReleaseTests.swift */; };
+		54874F502499C3D0007D9CBB /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54874F4E2499C3D0007D9CBB /* MenuViewController.xib */; };
+		54874F512499C3D0007D9CBB /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54874F4E2499C3D0007D9CBB /* MenuViewController.xib */; };
+		54874F522499C3D0007D9CBB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54874F4F2499C3D0007D9CBB /* MenuViewController.swift */; };
+		54874F532499C3D0007D9CBB /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54874F4F2499C3D0007D9CBB /* MenuViewController.swift */; };
 		776D757DDA86C470439D666E /* Pods_HuCaChat_Dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CA3430773798BFCD311CD9 /* Pods_HuCaChat_Dev.framework */; };
 		F7161A711E518225008C69F0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7161A701E518225008C69F0 /* Helper.swift */; };
 		F73527121E647DA200A4E4D1 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73527111E647DA200A4E4D1 /* UIImageExtension.swift */; };
@@ -479,6 +483,8 @@
 		54874F432499B8C0007D9CBB /* HuCaChat_ReleaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuCaChat_ReleaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54874F452499B8C0007D9CBB /* HuCaChat_ReleaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuCaChat_ReleaseTests.swift; sourceTree = "<group>"; };
 		54874F472499B8C0007D9CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54874F4E2499C3D0007D9CBB /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		54874F4F2499C3D0007D9CBB /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5F162E9CEE4B428DBD599CAB /* Pods_HuCaChat_Release.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuCaChat_Release.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B657EE575435C1C68DF5B79 /* Pods-HuCaChat_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_Dev/Pods-HuCaChat_Dev.debug.xcconfig"; sourceTree = "<group>"; };
 		88AB01D0A6A014464F6F60FC /* Pods-Demo_Chat_Dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo_Chat_Dev.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo_Chat_Dev/Pods-Demo_Chat_Dev.debug.xcconfig"; sourceTree = "<group>"; };
@@ -695,6 +701,7 @@
 		480FED611F39A5DC00CDF17A /* Music */ = {
 			isa = PBXGroup;
 			children = (
+				54874F4D2499C371007D9CBB /* Menu */,
 				481C05EB1F550849008373AF /* MusicVC */,
 				481C05EA1F550832008373AF /* SearchMusic */,
 			);
@@ -1039,6 +1046,15 @@
 				54874F472499B8C0007D9CBB /* Info.plist */,
 			);
 			path = HuCaChat_ReleaseTests;
+			sourceTree = "<group>";
+		};
+		54874F4D2499C371007D9CBB /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				54874F4F2499C3D0007D9CBB /* MenuViewController.swift */,
+				54874F4E2499C3D0007D9CBB /* MenuViewController.xib */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		F74741651E66DA7300E9EA43 /* Messages */ = {
@@ -1537,6 +1553,7 @@
 				4812F07F1F3A223F0039A011 /* CCNM.mp3 in Resources */,
 				4812F0771F3A223F0039A011 /* AMN.lrc in Resources */,
 				48CC55B41F58693C00ADB164 /* VTCS.png in Resources */,
+				54874F512499C3D0007D9CBB /* MenuViewController.xib in Resources */,
 				4812F0871F3A223F0039A011 /* DM.lrc in Resources */,
 				48CC55AC1F58693C00ADB164 /* DADM.png in Resources */,
 				48CC55AA1F58693C00ADB164 /* CCNM.png in Resources */,
@@ -1577,6 +1594,7 @@
 				4812F08E1F3A223F0039A011 /* ECDD.lrc in Resources */,
 				485603111F24F60700A62606 /* HuCaChat_Dev-Info.plist in Resources */,
 				4812F07C1F3A223F0039A011 /* CCNM.lrc in Resources */,
+				54874F502499C3D0007D9CBB /* MenuViewController.xib in Resources */,
 				48CC55B11F58693C00ADB164 /* TMW.png in Resources */,
 				4867FB821F4C077F00FDCE03 /* Localizable.strings in Resources */,
 				F7B747471E50BAF200D93F2B /* gotham-bold.ttf in Resources */,
@@ -1905,6 +1923,7 @@
 				4813026B1F48A12100B6EB2D /* PeopleCollectionCell.swift in Sources */,
 				48789C861F24F291007D24CE /* TagListView.swift in Sources */,
 				48789C871F24F291007D24CE /* DownloadPhotoOperation.swift in Sources */,
+				54874F532499C3D0007D9CBB /* MenuViewController.swift in Sources */,
 				48789C881F24F291007D24CE /* NotificationViewController.swift in Sources */,
 				48789C891F24F291007D24CE /* RegistUserViewController.swift in Sources */,
 				48789C8A1F24F291007D24CE /* LeftMenuViewController.swift in Sources */,
@@ -2122,6 +2141,7 @@
 				48939AD51EC76479004E459D /* CRNotification.swift in Sources */,
 				485AC2441EB8767600C4F38B /* NotificationCell.swift in Sources */,
 				4893E57C1EB79E590051C321 /* RecentGroupCell.swift in Sources */,
+				54874F522499C3D0007D9CBB /* MenuViewController.swift in Sources */,
 				48118AE81F430A5900DE6223 /* ProductionCountries.swift in Sources */,
 				480FED6A1F39A7B800CDF17A /* SongListCollectionCell.swift in Sources */,
 				486B0EA51F5FF1B1007F84CC /* ForgotPasswordViewController.swift in Sources */,

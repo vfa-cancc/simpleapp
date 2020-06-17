@@ -59,6 +59,22 @@ class LocalDB {
         response(true)
     }
     
+    func removeMusicInLocalDB(id: String, response: @escaping(Bool) -> Void) {
+        let result = DBHelper.share.removeObject(type: Song.self, id: id)
+        response(result)
+    }
+    
+    func getMusicById(id: String) -> Song? {
+        return DBHelper.share.filterById(objectType: Song.self, value: id)
+    }
+    
+    func changeNameMusicLocalDB(id: String, name: String, response: @escaping (Bool) -> ()) {
+        DBHelper.share.updateObject(id: id, type: Song.self) { (item) in
+            item.title = name
+            response(true)
+        }
+    }
+    
     func addSongInLocalDB(obj: SongModel) {
         let song = Song()
         song.id = obj.id

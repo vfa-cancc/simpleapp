@@ -65,6 +65,23 @@ class BaseViewController: UIViewController {
         })
     }
     
+    /// Create Message confirm
+       ///
+       /// - Parameters:
+       ///   - title: title show on alert, default null
+       ///   - message: message show on alert
+       ///   - titleCancel: cancel button, default title is Close
+       ///   - titleConfirm: cancel button, default title is Confirm
+       /// - Returns: Action click
+       func showConfirm(title: String?, message: String, titleCancel: String = "Close", titleConfirm : String = "Confirm", callbackConfirm: @escaping () -> ()) {
+           let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+           alert.addAction(UIAlertAction(title: titleCancel, style: .cancel, handler: nil))
+           alert.addAction(UIAlertAction(title: titleConfirm, style: .default, handler: { (_) in
+               callbackConfirm()
+           }))
+           self.present(alert, animated: true, completion: nil)
+       }
+    
     func redirectToHomeVC() {
         let homeVC = UIManager.shared.vcToSetFirst()
         self.navigationController?.pushViewController(homeVC, animated: true)

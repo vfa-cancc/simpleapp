@@ -128,4 +128,29 @@ extension UIViewController {
             vc.navigationController?.navigationBar.shadowImage = nil
         }
     }
+    
+    func addTwoButtonToNavigation(image1: UIImage, action1: Selector?, image2: UIImage, action2: Selector?) {
+        let btn1 = UIButton()
+        btn1.setImage(image1, for: .normal)
+        if let newAction = action1 {
+            btn1.addTarget(self, action: newAction, for: .touchUpInside)
+        }
+        
+        btn1.frame = CGRect(x: 0, y: 0, width: 30, height: 44)
+        btn1.contentHorizontalAlignment = .right
+        let button1 = UIBarButtonItem(customView: btn1)
+        
+        //---
+        let btn2 = UIButton()
+        btn2.setImage(image2, for: .normal)
+        if let newAction = action2 {
+            btn2.addTarget(self, action: newAction, for: .touchUpInside)
+        }
+        btn2.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
+        btn2.contentHorizontalAlignment = .right
+        
+        let button2 = UIBarButtonItem(customView: btn2)
+        
+        self.navigationItem.rightBarButtonItems = [button1, button2]
+    }
 }

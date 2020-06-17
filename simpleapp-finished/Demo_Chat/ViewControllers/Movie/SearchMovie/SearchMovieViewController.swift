@@ -31,11 +31,17 @@ class SearchMovieViewController: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = NSLocalizedString("h_search", "")
-        searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
+//        searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
+        searchController.searchBar.backgroundColor = Theme.shared.color_Navigator()
         searchController.searchBar.tintColor = UIColor.white
-        searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("h_cancel", "")
+//        searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
         definesPresentationContext = true
-        tableView.tableHeaderView = searchController.searchBar
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+        } else {
+            tableView.tableHeaderView = searchController.searchBar
+        }
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -84,7 +90,7 @@ class SearchMovieViewController: UIViewController {
 
 extension SearchMovieViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        if let textSearch:String = searchController.searchBar.text, textSearch.characters.count >= 1 {
+        if let textSearch:String = searchController.searchBar.text, textSearch.count >= 1 {
             searchText = textSearch
             Thread.cancelPreviousPerformRequests(withTarget: self)
             self.perform(#selector(searchMovie), with: nil, afterDelay: TimeInterval(0.2))

@@ -29,13 +29,17 @@ class SearchMusicViewController: UIViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         searchController.searchBar.placeholder = NSLocalizedString("h_search", "")
-        searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
+        searchController.searchBar.barTintColor = UIColor.white
         searchController.searchBar.tintColor = UIColor.white
-        searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        searchController.searchBar.backgroundColor = Theme.shared.color_Navigator()
+        UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("h_cancel", "")
         searchController.searchBar.scopeButtonTitles = [HOST_NHAC_CUA_TUI, HOST_MP3_ZING]
         searchController.searchBar.delegate = self
-        tableView.tableHeaderView = searchController.searchBar
-        
+        if #available(iOS 11.0, *) {
+            navigationItem.searchController = searchController
+        } else {
+            tableView.tableHeaderView = searchController.searchBar
+        }
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -44,6 +48,8 @@ class SearchMusicViewController: UIViewController {
         
         btnDownloadMusic.layer.cornerRadius = btnDownloadMusic.frame.size.height / 2
         btnDownloadMusic.clipsToBounds = true
+//        guard let hostName = searchController.searchBar.scopeButtonTitles?[searchController.searchBar.selectedScopeButtonIndex] else { return }
+//        searchMusic(HOST_MP3_ZING)
     }
     
     func setupNavigation() {
@@ -101,7 +107,7 @@ class SearchMusicViewController: UIViewController {
 
 extension SearchMusicViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        if let textSearch:String = searchController.searchBar.text, textSearch.characters.count >= 1 {
+        if let textSearch:String = searchController.searchBar.text, textSearch.count >= 1 {
             searchText = textSearch
             guard let hostName = searchController.searchBar.scopeButtonTitles?[searchController.searchBar.selectedScopeButtonIndex] else { return }
             Thread.cancelPreviousPerformRequests(withTarget: self)
@@ -114,7 +120,7 @@ extension SearchMusicViewController: UISearchResultsUpdating {
     }
     
     @objc func searchMusic(_ hostName: String) {
-        if searchText == "" {return}
+//        if searchText == "" {return}
         self.pleaseWait()
         MainDB.shared.searchMusic(searchText: searchText, hostName: hostName, responses: { (musics) in
             if let musics = musics {
