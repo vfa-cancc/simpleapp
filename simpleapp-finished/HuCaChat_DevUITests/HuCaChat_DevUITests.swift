@@ -34,13 +34,15 @@ class HuCaChat_DevUITests: XCTestCase {
         self.testSignInVC()
         self.testRightVC()
         self.testHomeVC()
+        self.testMusicVC()
+        self.testMapVC()
     }
     
-    /// Handle test Login view cotroller
+    /// Handle test Login view controller
     private func testSignInVC() {
         let tfUsername = app.textFields["tfUsername"]
         XCTAssert(tfUsername.exists)
-        tfUsername.tap()
+        self.tapElementAndWaitForKeyboardToAppear(tfUsername)
         tfUsername.typeText("vfa.hungnv@gmail.com")
         
         let tfPassword = app.secureTextFields["tfPassword"]
@@ -53,7 +55,7 @@ class HuCaChat_DevUITests: XCTestCase {
         btnLogin.tap()
     }
     
-    /// Handle test Login view cotroller
+    /// Handle test Login view controller
     private func testLogoutVC() {
         /// Logout
         let leftBar: XCUIElement = app.navigationBars.buttons.element(boundBy: 0)
@@ -65,12 +67,11 @@ class HuCaChat_DevUITests: XCTestCase {
         btnLogout.tap()
     }
     
-    /// Handle test Right view cotroller, list all user in blacklist
+    /// Handle test Right view controller, list all user in blacklist
     private func testRightVC() {
         /// Right bar
         let rightBar: XCUIElement = app.navigationBars.buttons.element(boundBy: 1)
         self.waitForElementToAppear(rightBar) /// Wait for element load finished
-        XCTAssert(rightBar.exists)
         rightBar.tap()
         
         let tableView = app.tables.containing(.table, identifier: "tableView")
@@ -81,24 +82,73 @@ class HuCaChat_DevUITests: XCTestCase {
         rightBar.tap()
     }
     
-    /// Handle test Home view cotroller
+    /// Handle test Home view controller
     private func testHomeVC() {
         /// Send message
-        app.tables.staticTexts["Hung IT"].tap()
+        let tableView = app.tables.containing(.table, identifier: "tableView")
+        XCTAssertTrue(tableView.cells.count > 2)
+        let cell = tableView.cells.element(boundBy: 2)
+        cell.tap()
         let tvInputMessage = app.textViews["tvInputMessage"]
         XCTAssert(tvInputMessage.exists)
-        tvInputMessage.tap()
+        self.tapElementAndWaitForKeyboardToAppear(tvInputMessage)
         tvInputMessage.typeText("VnIndex bứt phá 22 điểm, nhiều nhà đầu tư chạy hôm qua tiếc nuối ^^")
         let btnSend = app.buttons["btnSend"]
         XCTAssert(btnSend.exists)
         btnSend.tap()
-        app.navigationBars["Hung IT"].buttons["leftBar"].tap()
+        app.navigationBars["navigationBar"].buttons["leftBar"].tap()
         
         /// Move to Group view controller
+        let btnGroup = app.buttons["btnCalendarBar"]
+        XCTAssert(btnGroup.exists)
+        btnGroup.tap()
         
+        /// Move to Notification view controller
+        let btnNotification = app.buttons["btnAlartBar"]
+        XCTAssert(btnNotification.exists)
+        btnNotification.tap()
+        
+        /// Move to Setting view controller
+        let btnSetting = app.buttons["btnSettingBar"]
+        XCTAssert(btnSetting.exists)
+        btnSetting.tap()
+        
+        /// Touch Center button
+        let btnCenter = app.buttons["btnCenterBar"]
+        XCTAssert(btnCenter.exists)
+        btnCenter.tap()
     }
     
+    /// Handle test Music view controller
+    private func testMusicVC() {
+        let btnMusic = app.buttons["btnCameraBar"]
+        XCTAssert(btnMusic.exists)
+        btnMusic.tap()
+        let sldTime = app.sliders["sldTime"]
+        XCTAssert(sldTime.exists)
+        sldTime.adjust(toNormalizedSliderPosition: 0.4)
+        let btnPlay = app.buttons["btnPlay"]
+        XCTAssert(btnPlay.exists)
+        btnPlay.tap()
+        let collectionView = app.collectionViews.element
+        XCTAssertTrue(collectionView.cells.count > 0)
+        collectionView.swipeLeft()
+        collectionView.swipeRight()
+        btnPlay.tap()
+        app.navigationBars["navigationBar"].buttons["leftBar"].tap()
+    }
     
+    /// Handle test Map view controller
+    private func testMapVC() {
+        /// Touch Center button
+        let btnCenter = app.buttons["btnCenterBar"]
+        XCTAssert(btnCenter.exists)
+        btnCenter.tap()
+        let btnMap = app.buttons["btnVideoBar"]
+        XCTAssert(btnMap.exists)
+        btnMap.tap()
+        app.navigationBars["navigationBar"].buttons["leftBar"].tap()
+    }
     
     // MARK: - Other method
     

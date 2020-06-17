@@ -71,7 +71,7 @@ extension UIViewController {
     func setupNavigationBar(vc: UIViewController, title: String? = nil, leftText: String? = nil, leftImg: UIImage? = nil, leftSelector: Selector? = nil, rightText: String? = nil, rightImg: UIImage? = nil, rightSelector: Selector? = nil, isDarkBackground: Bool? = false, isTransparent: Bool? = false) -> Void {
         
         vc.navigationItem.hidesBackButton = true
-        
+        vc.navigationController?.navigationBar.accessibilityIdentifier = "navigationBar"
         if title != nil {
             vc.navigationItem.title = title
             vc.navigationController?.isNavigationBarHidden = false

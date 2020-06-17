@@ -37,6 +37,29 @@
                BlueprintName = "HuCaChat_DevUITests"
                ReferencedContainer = "container:HuCaChat.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testHomeVC()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testLaunchPerformance()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testLogoutVC()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testMapVC()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testMusicVC()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testRightVC()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testSignInVC()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
       </Testables>
    </TestAction>
