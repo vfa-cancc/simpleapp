@@ -22,7 +22,6 @@ class StatusMessageViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "status_message_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "status_message_screen", screenClass: classForCoder.description())
     }
     

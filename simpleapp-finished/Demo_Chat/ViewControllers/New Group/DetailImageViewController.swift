@@ -22,7 +22,6 @@ class DetailImageViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "detail_image")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "detail_image", screenClass: classForCoder.description())
     }
     
@@ -65,7 +64,6 @@ class DetailImageViewController: BaseViewController {
     @objc func actBack(btn: UIButton) {
         _ = navigationController?.popViewController(animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "chat_and_group", action: "detail_image", label: "back", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "chat_and_group", action: "detail_image", label: "back")
     }
 

@@ -26,7 +26,6 @@ class ForgotPasswordViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "forgot_password_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "forgot_password_screen", screenClass: classForCoder.description())
     }
     
@@ -98,7 +97,6 @@ extension ForgotPasswordViewController: UITextFieldDelegate {
         gesture.isEnabled = true
         
         if textField == self.txtEmail {
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "forgot_password", label: "input_email", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "forgot_password", label: "input_email")
         }
         

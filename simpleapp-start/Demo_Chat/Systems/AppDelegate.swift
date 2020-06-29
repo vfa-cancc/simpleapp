@@ -12,7 +12,6 @@ import Firebase
 import UserNotifications
 import FBSDKCoreKit
 import Fabric
-import Crashlytics
 import TwitterKit
 import GoogleMaps
 import Alamofire
@@ -30,8 +29,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.requestNotification(application: application)
         
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        Fabric.with([Crashlytics.self])
-        AnalyticsHelper.shared.shareManage()
         Twitter.sharedInstance().start(withConsumerKey: CONSUMER_KEY, consumerSecret: CONSUMER_SECRET)
         
         UIApplication.shared.statusBarStyle = UIStatusBarStyle.lightContent

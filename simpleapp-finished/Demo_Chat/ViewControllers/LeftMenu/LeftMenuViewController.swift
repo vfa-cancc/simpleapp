@@ -59,7 +59,6 @@ class LeftMenuViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "left_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "left_screen", screenClass: classForCoder.description())
         self.btnLogout.setTitle(NSLocalizedString("h_logout", "") , for: .normal)
     }
@@ -88,14 +87,12 @@ class LeftMenuViewController: BaseViewController {
     }
     
     @IBAction func actChangeAvatar(_ sender: Any) {
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_left_menu", label: "update_avatar", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_left_menu", label: "update_avatar")
         
         self.showCamera()
     }
 
     @IBAction func actLogout(_ sender: Any) {
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_left_menu", label: "logout", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_left_menu", label: "logout")
         
         Helper.shared.removeUserDefault(key: kUserInfo)
@@ -120,7 +117,6 @@ extension LeftMenuViewController {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let openCamera = UIAlertAction(title: "Take a new photo", style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_left_menu", label: "take_a_new_photo", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_left_menu", label: "take_a_new_photo")
                 
                 self.imagePicker?.sourceType = .camera
@@ -130,7 +126,6 @@ extension LeftMenuViewController {
             
             let openPhotoLibrary = UIAlertAction(title: "Choose from Library", style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_left_menu", label: "choose_from_library", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_left_menu", label: "choose_from_library")
                 
                 self.imagePicker?.sourceType = .photoLibrary
@@ -140,7 +135,6 @@ extension LeftMenuViewController {
             
             let cancel = UIAlertAction(title: "Cancel", style: .cancel, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_left_menu", label: "cancel", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_left_menu", label: "cancel")
             })
             

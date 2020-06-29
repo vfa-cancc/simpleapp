@@ -23,7 +23,6 @@ class ChatSettingsViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "chat_settings_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "chat_settings_screen", screenClass: classForCoder.description())
     }
     
@@ -47,20 +46,16 @@ class ChatSettingsViewController: BaseViewController {
     
     @IBAction func changeReadReceipt(_ sender: UISwitch) {
         if sender.isOn {
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "chat_settings", label: "read_receipt_on", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "chat_settings", label: "read_receipt_on")
         } else {
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "chat_settings", label: "read_receipt_off", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "chat_settings", label: "read_receipt_off")
         }
     }
     
     @IBAction func changeLastSeen(_ sender: UISwitch) {
         if sender.isOn {
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "chat_settings", label: "last_seen_on", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "chat_settings", label: "last_seen_on")
         } else {
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "chat_settings", label: "last_seen_off", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "last_seen_off", label: "touch")
         }
     }

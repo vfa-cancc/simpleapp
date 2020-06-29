@@ -53,7 +53,6 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
         
         self.delegate?.didFinishedEnableLocation()
         self.createTimer()
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "location", action: "authen_request", label: "start", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "location", action: "authen_request", label: "start")
     }
     
@@ -63,7 +62,6 @@ class LocationHelper: NSObject, CLLocationManagerDelegate {
         
         self.delegate?.didFinishedEnableLocation()
         self.removeTimer()
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "location", action: "authen_request", label: "deny", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "location", action: "authen_request", label: "deny")
     }
     

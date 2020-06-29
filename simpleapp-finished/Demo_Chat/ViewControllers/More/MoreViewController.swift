@@ -57,7 +57,6 @@ class MoreViewController: BaseViewController {
             lblNumBlockUsers.text = "0"
         }
         
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "more_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "more_screen", screenClass: classForCoder.description())
         
         GoogleAdMobHelper.shared.showBannerView()
@@ -223,7 +222,6 @@ class MoreViewController: BaseViewController {
         let statusMessageVC = self.storyboard?.instantiateViewController(withIdentifier: "StatusMessageVC") as! StatusMessageViewController
         self.navigationController?.pushViewController(statusMessageVC, animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "status_message", label: "update", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "status_message", label: "update")
     }
     
@@ -270,7 +268,6 @@ class MoreViewController: BaseViewController {
         let blockUsersVC = self.storyboard?.instantiateViewController(withIdentifier: "BlockUsersVC") as! BlockUsersViewController
         self.navigationController?.pushViewController(blockUsersVC, animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "block_user", label: "touch", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "block_user", label: "touch")
     }
     
@@ -278,7 +275,6 @@ class MoreViewController: BaseViewController {
         let aboutVC = self.storyboard?.instantiateViewController(withIdentifier: "AboutVC") as! AboutViewController
         self.navigationController?.pushViewController(aboutVC, animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "game", label: "touch", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "game", label: "touch")
     }
     
@@ -414,25 +410,21 @@ extension MoreViewController: UIPickerViewDelegate {
             case 0:
                 vStatus.backgroundColor = Theme.shared.color_Online()
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "online_status", label: "available", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "online_status", label: "available")
                 break
             case 1:
                 vStatus.backgroundColor = Theme.shared.color_Away()
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "online_status", label: "away", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "online_status", label: "away")
                 break
             case 2:
                 vStatus.backgroundColor = Theme.shared.color_Offline()
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "online_status", label: "offline", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "online_status", label: "offline")
                 break
             case 3:
                 vStatus.backgroundColor = Theme.shared.color_Busy()
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "online_status", label: "busy", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "online_status", label: "busy")
                 break
             default:
@@ -443,15 +435,12 @@ extension MoreViewController: UIPickerViewDelegate {
             
             switch row {
             case 0:
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "language", label: "english", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "language", label: "english")
                 break
             case 1:
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "language", label: "vietnamese", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "language", label: "vietnamese")
                 break
             case 2:
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "language", label: "japanese", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "language", label: "japanese")
                 break
             default:

@@ -51,6 +51,9 @@
                   Identifier = "HuCaChat_DevUITests/testMapVC()">
                </Test>
                <Test
+                  Identifier = "HuCaChat_DevUITests/testMovieVC()">
+               </Test>
+               <Test
                   Identifier = "HuCaChat_DevUITests/testMusicVC()">
                </Test>
                <Test

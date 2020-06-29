@@ -277,7 +277,7 @@ extension ContactViewController: ContactCellDelegate {
             if error == nil {
                 self.ref.child("Users/\(user.id)/conversations/\(currentUID)").setValue(newRoomChatRef.key)
                 self.ref.child("Users/\(currentUID)/conversations/\(user.id)").setValue(newRoomChatRef.key)
-                self.pushToChatDetails(roomKey: newRoomChatRef.key)
+                self.pushToChatDetails(roomKey: newRoomChatRef.key!)
             }
         }
     }

@@ -37,7 +37,6 @@ class LoginViewController: BaseViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "login_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "login_screen", screenClass: classForCoder.description())
     }
     
@@ -107,7 +106,6 @@ class LoginViewController: BaseViewController {
             }
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "login", label: "facebook", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "login", label: "facebook")
     }
     
@@ -132,7 +130,6 @@ class LoginViewController: BaseViewController {
             self.firebaseLogin(credential: credential, provider: "Twitter")
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "login", label: "twitter", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "login", label: "twitter")
     }
     
@@ -229,7 +226,6 @@ class LoginViewController: BaseViewController {
             }
         })
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "login", label: "touch", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "login", label: "touch")
     }
     
@@ -270,12 +266,10 @@ extension LoginViewController: UITextFieldDelegate {
         
         switch textField {
         case self.txtEmail:
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "login", label: "input_email", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "login", label: "input_email")
             break
             
         default:
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "login", label: "input_password", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "login", label: "input_password")
             break
         }

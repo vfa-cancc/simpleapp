@@ -35,7 +35,6 @@ class AddUsersViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "add_users_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "add_users_screen", screenClass: classForCoder.description())
     }
     
@@ -57,7 +56,6 @@ class AddUsersViewController: BaseViewController {
     @objc func actBack(btn: UIButton) {
         _ = navigationController?.popViewController(animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "add_users", label: "back", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "add_users", label: "back")
     }
     
@@ -75,7 +73,6 @@ class AddUsersViewController: BaseViewController {
             }
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "add_users", label: "add", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "add_users", label: "add")
     }
     
@@ -275,7 +272,6 @@ extension AddUsersViewController: AddUsersCellDelegate {
         }
         self.tableView.reloadRows(at: [myIndex], with: .none)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "add_users", label: "select_user", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "add_users", label: "select_user")
     }
 }

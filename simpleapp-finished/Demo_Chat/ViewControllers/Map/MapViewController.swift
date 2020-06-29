@@ -29,7 +29,6 @@ class MapViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "map_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "map_screen", screenClass: classForCoder.description())
     }
     

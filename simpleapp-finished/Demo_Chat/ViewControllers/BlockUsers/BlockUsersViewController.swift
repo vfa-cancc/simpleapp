@@ -33,7 +33,6 @@ class BlockUsersViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "block_users_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "block_users_screen", screenClass: classForCoder.description())
     }
     
@@ -185,17 +184,14 @@ extension BlockUsersViewController: UITableViewDataSource {
                     print("Cancel")
                 #endif
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "block_users", label: "cancel_unblock", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "block_users", label: "cancel_unblock")
             } else if position == 1 {
                 self.updateUnBlockUser(blockID: user.id)
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "block_users", label: "touch_unblock", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "block_users", label: "touch_unblock")
             }
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "more", action: "block_users", label: "message_confirm_unblock", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "more", action: "block_users", label: "message_confirm_unblock")
     }
     

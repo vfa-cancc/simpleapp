@@ -36,6 +36,7 @@ class HuCaChat_DevUITests: XCTestCase {
         self.testHomeVC()
         self.testMusicVC()
         self.testMapVC()
+//        self.testMovieVC()
     }
     
     /// Handle test Login view controller
@@ -148,6 +149,20 @@ class HuCaChat_DevUITests: XCTestCase {
         XCTAssert(btnMap.exists)
         btnMap.tap()
         app.navigationBars["navigationBar"].buttons["leftBar"].tap()
+    }
+    
+    /// Handle test Movie view controller
+    private func testMovieVC() {
+        // Touch Center button
+        let btnCenter = app.buttons["btnCenterBar"]
+        XCTAssert(btnCenter.exists)
+        btnCenter.tap()
+        let btnMovie = app.buttons["btnCheckInBar"]
+        XCTAssert(btnMovie.exists)
+        btnMovie.tap()
+        let tableView = app.tables.element
+        tableView.swipeUp()
+        tableView.swipeUp()
     }
     
     // MARK: - Other method

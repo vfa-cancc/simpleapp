@@ -20,7 +20,6 @@ class TermViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "Term_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "Term_screen", screenClass: classForCoder.description())
     }
     

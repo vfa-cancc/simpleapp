@@ -34,7 +34,6 @@ class RightMenuViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "right_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "right_screen", screenClass: classForCoder.description())
     }
     
@@ -249,17 +248,14 @@ extension RightMenuViewController: UITableViewDataSource {
                     print("Cancel")
                 #endif
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_right_menu", label: "cancel_block", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_right_menu", label: "cancel_block")
             } else if position == 1 {
                 self.updateBlockUser(blockID: user.id)
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_right_menu", label: "touch_block", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_right_menu", label: "touch_block")
             }
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "home_right_menu", label: "message_confirm_block", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "home_right_menu", label: "message_confirm_block")
     }
     

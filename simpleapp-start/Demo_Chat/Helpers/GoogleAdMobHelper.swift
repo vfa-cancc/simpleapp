@@ -11,8 +11,8 @@ import Firebase
 
 struct GoogleAdsUnitID {
     struct Test {
-        static var strBannerAdsID = "ca-app-pub-3940256099942544/2934735716"
-        static var strInterstitialAdsID = "ca-app-pub-3940256099942544/4411468910"
+        static var strBannerAdsID = "ca-app-pub-8391716737248301/3412485571"
+        static var strInterstitialAdsID = "ca-app-pub-8391716737248301/7160158892"
     }
     
     struct Live {
@@ -156,7 +156,6 @@ class GoogleAdMobHelper: NSObject, GADInterstitialDelegate, GADBannerViewDelegat
         #endif
         isBannerViewDisplay = true
         self.delegate?.didFinishedLoadAd(isDisplay: true)
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "adMob", action: "banner_view", label: "view", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "adMob", action: "banner_view", label: "view")
     }
     
@@ -187,7 +186,6 @@ class GoogleAdMobHelper: NSObject, GADInterstitialDelegate, GADBannerViewDelegat
         #if DEBUG
             print("adViewWillLeaveApplication")
         #endif
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "adMob", action: "banner_view", label: "click", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "adMob", action: "banner_view", label: "click")
     }
     
@@ -196,7 +194,6 @@ class GoogleAdMobHelper: NSObject, GADInterstitialDelegate, GADBannerViewDelegat
         #if DEBUG
             print("interstitialDidReceiveAd")
         #endif
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "adMob", action: "interstitial", label: "view", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "adMob", action: "interstitial", label: "view")
     }
     

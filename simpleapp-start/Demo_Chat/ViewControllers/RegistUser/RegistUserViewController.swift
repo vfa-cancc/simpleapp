@@ -47,7 +47,6 @@ class RegistUserViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "request_access_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "request_access_screen", screenClass: classForCoder.description())
     }
     
@@ -80,8 +79,6 @@ class RegistUserViewController: BaseViewController {
     
     @IBAction func actChangeAvatar(_ sender: Any) {
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "input_avatar")
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "input_avatar", value: nil)
-        
         self.showCamera()
     }
     
@@ -184,17 +181,14 @@ extension RegistUserViewController: UITextFieldDelegate {
         
         switch textField {
         case self.txtDisplayName:
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "input_display_name", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "input_display_name")
             break
             
         case self.txtEmail:
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "input_email", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "input_email")
             break
             
         default:
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "input_password", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "input_password")
             break
         }
@@ -221,7 +215,6 @@ extension RegistUserViewController {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let openCamera = UIAlertAction(title: NSLocalizedString("h_take_a_new_photo", ""), style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "take_a_new_photo", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "take_a_new_photo")
                 
                 self.imagePicker?.sourceType = .camera
@@ -231,7 +224,6 @@ extension RegistUserViewController {
             
             let openPhotoLibrary = UIAlertAction(title: NSLocalizedString("h_choose_from_library", ""), style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "choose_from_library", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "choose_from_library")
                 
                 self.imagePicker?.sourceType = .photoLibrary
@@ -241,7 +233,6 @@ extension RegistUserViewController {
             
             let cancel = UIAlertAction(title: NSLocalizedString("h_cancel", ""), style: .cancel, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "user", action: "request_access", label: "cancel", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "user", action: "request_access", label: "cancel")
             })
             

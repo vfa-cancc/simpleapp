@@ -56,7 +56,6 @@ class CreateGroupViewController: BaseViewController {
             tagListView.addTag(name)
         }
         
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "create_group_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "create_group_screen", screenClass: classForCoder.description())
     }
     
@@ -108,7 +107,6 @@ class CreateGroupViewController: BaseViewController {
     @objc func actBack(btn: UIButton) {
         _ = navigationController?.popViewController(animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "back", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "back")
     }
     
@@ -117,7 +115,6 @@ class CreateGroupViewController: BaseViewController {
         addUsersVC.selected = usersSelected
         self.navigationController?.pushViewController(addUsersVC, animated: true)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "add_user_to_group", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "add_user_to_group")
     }
     
@@ -134,7 +131,6 @@ class CreateGroupViewController: BaseViewController {
             _ = navigationController?.popViewController(animated: true)
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "cancel", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "cancel")
     }
     
@@ -146,7 +142,6 @@ class CreateGroupViewController: BaseViewController {
         
         self.pleaseWait()
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "create", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "create")
         
         self.uploadAvatarToFirebase(completionHandler: { (value) in
@@ -159,9 +154,9 @@ class CreateGroupViewController: BaseViewController {
             
             var people:[String:String] = [String:String]()
             for id in self.usersSelected.keys {
-                people[self.ref.childByAutoId().key] = id
+                people[self.ref.childByAutoId().key!] = id
             }
-            people[self.ref.childByAutoId().key] = self.currentuserID
+            people[self.ref.childByAutoId().key!] = self.currentuserID
             
             guard let currDisplayName = self.txtNameGroup.text else { return }
             
@@ -178,12 +173,12 @@ class CreateGroupViewController: BaseViewController {
                 if error == nil {
                     var key: String
                     for id in self.usersSelected.keys {
-                        key = self.ref.childByAutoId().key
+                        key = self.ref.childByAutoId().key!
                         self.ref.child("Users/\(id)/groups/\(key)").setValue(newRoomChatRef.key)
                     }
-                    key = self.ref.childByAutoId().key
+                    key = self.ref.childByAutoId().key!
                     self.ref.child("Users/\(self.currentuserID)/groups/\(key)").setValue(newRoomChatRef.key)
-                    self.pushToChatDetails(roomKey: newRoomChatRef.key)
+                    self.pushToChatDetails(roomKey: newRoomChatRef.key!)
                 }
             }
         })
@@ -224,7 +219,6 @@ extension CreateGroupViewController {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let openCamera = UIAlertAction(title: NSLocalizedString("h_take_a_new_photo", ""), style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "take_a_new_photo", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "take_a_new_photo")
                 
                 self.imagePicker?.sourceType = .camera
@@ -234,7 +228,6 @@ extension CreateGroupViewController {
             
             let openPhotoLibrary = UIAlertAction(title: NSLocalizedString("h_choose_from_library", ""), style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "choose_from_library", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "choose_from_library")
                 
                 self.imagePicker?.sourceType = .photoLibrary
@@ -244,7 +237,6 @@ extension CreateGroupViewController {
             
             let cancel = UIAlertAction(title: NSLocalizedString("h_cancel", ""), style: .cancel, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "cancel", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "cancel")
             })
             
@@ -357,7 +349,6 @@ extension CreateGroupViewController: UINavigationControllerDelegate, UIImagePick
 extension CreateGroupViewController: UITextFieldDelegate {
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         gesture.isEnabled = true
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "create_group", label: "input_group_name", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "create_group", label: "input_group_name")
         
         return true

@@ -29,10 +29,15 @@ class SearchMusicViewController: UIViewController {
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
         searchController.searchBar.placeholder = NSLocalizedString("h_search", "")
-        searchController.searchBar.barTintColor = UIColor.white
         searchController.searchBar.tintColor = UIColor.white
-        searchController.searchBar.backgroundColor = Theme.shared.color_Navigator()
         UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("h_cancel", "")
+        if #available(iOS 13.0, *) {
+            searchController.searchBar.backgroundColor = Theme.shared.color_Navigator()
+            UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("h_cancel", "")
+        } else {
+            searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
+            searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        }
         searchController.searchBar.scopeButtonTitles = [HOST_NHAC_CUA_TUI, HOST_MP3_ZING]
         searchController.searchBar.delegate = self
         if #available(iOS 11.0, *) {
@@ -48,8 +53,6 @@ class SearchMusicViewController: UIViewController {
         
         btnDownloadMusic.layer.cornerRadius = btnDownloadMusic.frame.size.height / 2
         btnDownloadMusic.clipsToBounds = true
-//        guard let hostName = searchController.searchBar.scopeButtonTitles?[searchController.searchBar.selectedScopeButtonIndex] else { return }
-//        searchMusic(HOST_MP3_ZING)
     }
     
     func setupNavigation() {

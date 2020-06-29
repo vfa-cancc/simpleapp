@@ -28,7 +28,6 @@ class NotificationViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.title = Define.shared.getNameNotificationScreen().uppercased()
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "notification_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "notification_screen", screenClass: classForCoder.description())
     }
     

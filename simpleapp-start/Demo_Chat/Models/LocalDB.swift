@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import FMDB
 
 class LocalDB {
     private static let localInastance: LocalDB = LocalDB()

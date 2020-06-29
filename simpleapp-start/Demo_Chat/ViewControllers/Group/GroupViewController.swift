@@ -36,7 +36,6 @@ class GroupViewController: BaseViewController {
         super.viewWillAppear(animated)
         self.title = Define.shared.getNameGroupScreen().uppercased()
         
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "group_chat_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "group_chat_screen", screenClass: classForCoder.description())
         
         if (isPushToMessageID != "") {
@@ -257,7 +256,6 @@ extension GroupViewController: RecentGroupCellDelegate {
         let recentChat = self.recentChats[myIndex.row]
         self.pushToMessage(roomKey: recentChat.id)
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "group", action: "chat", label: "start_chat", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "group", action: "chat", label: "start_chat")
     }
     

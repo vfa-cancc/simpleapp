@@ -23,7 +23,7 @@ struct GoogleAdsUnitID {
 
 struct BannerViewSize {
     static var screenWidth: CGFloat = UIScreen.main.bounds.size.width
-    static var screenHeight: CGFloat = 64
+    static var screenHeight: CGFloat = UIManager.topSafeArea() > 0 ? (64 + UIManager.topSafeArea() - 20) : 64
     static var height: CGFloat = CGFloat(UIDevice.current.userInterfaceIdiom == .pad ? 90 : 50)
 }
 
@@ -156,7 +156,6 @@ class GoogleAdMobHelper: NSObject, GADInterstitialDelegate, GADBannerViewDelegat
         #endif
         isBannerViewDisplay = true
         self.delegate?.didFinishedLoadAd(isDisplay: true)
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "adMob", action: "banner_view", label: "view", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "adMob", action: "banner_view", label: "view")
     }
     
@@ -187,7 +186,6 @@ class GoogleAdMobHelper: NSObject, GADInterstitialDelegate, GADBannerViewDelegat
         #if DEBUG
             print("adViewWillLeaveApplication")
         #endif
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "adMob", action: "banner_view", label: "click", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "adMob", action: "banner_view", label: "click")
     }
     
@@ -196,7 +194,6 @@ class GoogleAdMobHelper: NSObject, GADInterstitialDelegate, GADBannerViewDelegat
         #if DEBUG
             print("interstitialDidReceiveAd")
         #endif
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "adMob", action: "interstitial", label: "view", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "adMob", action: "interstitial", label: "view")
     }
     

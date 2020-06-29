@@ -106,6 +106,9 @@
 		482998601F56BFC9009EEA7C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48840F8C1F31C66D001EC226 /* CoreLocation.framework */; };
 		482998611F56BFDE009EEA7C /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4829985E1F56BF90009EEA7C /* libsqlite3.0.tbd */; };
 		4829D9C11F19F87D000D3A71 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4829D9C01F19F87D000D3A71 /* SafariServices.framework */; };
+		482D1DEE24A9DA4D00CC5D6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480880652064AF52008DD271 /* AppDelegate.swift */; };
+		482D1DEF24A9DA6100CC5D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4808806B2064AFCB008DD271 /* LaunchScreen.storyboard */; };
+		482D1DF024A9DA6700CC5D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480880692064AFCB008DD271 /* Main.storyboard */; };
 		483A34C91F2AD695003C7747 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34C81F2AD695003C7747 /* PushModel.swift */; };
 		483A34CA1F2AD695003C7747 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34C81F2AD695003C7747 /* PushModel.swift */; };
 		483A34CC1F2B0E0B003C7747 /* MainDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34CB1F2B0E0B003C7747 /* MainDB.swift */; };
@@ -1535,6 +1538,7 @@
 				48CC55A81F58693C00ADB164 /* AMN.png in Resources */,
 				48A721B5249633800060945F /* PlayerView.xib in Resources */,
 				48FE8B4921037FF600AA3DD3 /* HuCaChat_Dev-Info.plist in Resources */,
+				482D1DEF24A9DA6100CC5D6E /* LaunchScreen.storyboard in Resources */,
 				4812F0911F3A223F0039A011 /* ECDD.mp3 in Resources */,
 				4812F0891F3A223F0039A011 /* DM.mp3 in Resources */,
 				48CC55B01F58693C00ADB164 /* ECDD.png in Resources */,
@@ -1548,6 +1552,7 @@
 				484AC1F51F57EC3E0010B65E /* GoogleService-Info-Real.plist in Resources */,
 				48789CE41F24F291007D24CE /* Assets.xcassets in Resources */,
 				4812F0971F3A223F0039A011 /* TMW.mp3 in Resources */,
+				482D1DF024A9DA6700CC5D6E /* Main.storyboard in Resources */,
 				48789CE51F24F291007D24CE /* GoogleService-Info.plist in Resources */,
 				4812F0791F3A223F0039A011 /* AMN.mp3 in Resources */,
 				4812F07F1F3A223F0039A011 /* CCNM.mp3 in Resources */,
@@ -1673,9 +1678,10 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EZAlertController/EZAlertController.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -1690,9 +1696,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAlertController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -1717,9 +1724,10 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/EZAlertController/EZAlertController.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/NCMB/NCMB.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
@@ -1734,9 +1742,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EZAlertController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NCMB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
@@ -1956,6 +1965,7 @@
 				48789C9B1F24F291007D24CE /* ContactCell.swift in Sources */,
 				48AA513D1F41A3AB005E7FA8 /* Genre.swift in Sources */,
 				48D343EC1F386AAB005FAFA3 /* HCKaraokeLyric.swift in Sources */,
+				482D1DEE24A9DA4D00CC5D6E /* AppDelegate.swift in Sources */,
 				4803C7E31F3DB946000392E5 /* Enum.swift in Sources */,
 				48A721C4249662F70060945F /* Song.swift in Sources */,
 				484AC1F61F57EE600010B65E /* CommonExtention.swift in Sources */,
@@ -2275,7 +2285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Demo_Chat/Demo_Chat.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = WN9FR2WF7Q;
@@ -2298,14 +2308,14 @@
 					"$(PROJECT_DIR)/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Demo_Chat/SupportFiles/HuCaChat_Release-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vfahungnv.hucachat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "ee85cc72-7935-42f8-87d3-8442dd37f7c0";
-				PROVISIONING_PROFILE_SPECIFIER = HuCaChat;
+				PROVISIONING_PROFILE_SPECIFIER = hucachat_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo_Chat/SupportFiles/Demo_Chat-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
@@ -2319,7 +2329,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Demo_Chat/Demo_Chat.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_TEAM = WN9FR2WF7Q;
 				ENABLE_BITCODE = NO;
@@ -2341,14 +2351,14 @@
 					"$(PROJECT_DIR)/Documents/FacebookSDK",
 				);
 				INFOPLIST_FILE = "Demo_Chat/SupportFiles/HuCaChat_Release-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 1.1;
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\"";
 				PRODUCT_BUNDLE_IDENTIFIER = io.github.vfahungnv.hucachat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "828cad5b-ccb4-4112-8393-06d0d25493d8";
-				PROVISIONING_PROFILE_SPECIFIER = HuCaChat;
+				PROVISIONING_PROFILE_SPECIFIER = hucachat_dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "Demo_Chat/SupportFiles/Demo_Chat-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};

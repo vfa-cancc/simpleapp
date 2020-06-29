@@ -56,7 +56,6 @@ class MusicViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "music_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "music_screen", screenClass: classForCoder.description())
     }
     
@@ -177,7 +176,6 @@ class MusicViewController: BaseViewController {
             lyricPlayerView.pause()
             isPlaying = false
             
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "music", action: "pause", label: "", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "music", action: "pause", label: "")
         } else {
             isPlaying = true
@@ -189,7 +187,6 @@ class MusicViewController: BaseViewController {
             }
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(playingSong), userInfo: nil, repeats: true)
             
-            AnalyticsHelper.shared.sendGoogleAnalytic(category: "music", action: "play", label: "", value: nil)
             AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "music", action: "play", label: "")
         }
         
@@ -270,7 +267,6 @@ class MusicViewController: BaseViewController {
         
         self.changeSong()
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "music", action: "next", label: "", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "music", action: "next", label: "")
     }
     
@@ -284,7 +280,6 @@ class MusicViewController: BaseViewController {
         
         self.changeSong()
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "music", action: "previous", label: "", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "music", action: "previous", label: "")
     }
     

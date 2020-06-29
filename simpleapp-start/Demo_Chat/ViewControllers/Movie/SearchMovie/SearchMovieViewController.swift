@@ -31,9 +31,14 @@ class SearchMovieViewController: UIViewController {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = NSLocalizedString("h_search", "")
-        searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
         searchController.searchBar.tintColor = UIColor.white
-        searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        if #available(iOS 13.0, *) {
+            searchController.searchBar.backgroundColor = Theme.shared.color_Navigator()
+            UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("h_cancel", "")
+        } else {
+            searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
+            searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        }
         definesPresentationContext = true
         tableView.tableHeaderView = searchController.searchBar
         

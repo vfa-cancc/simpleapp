@@ -31,7 +31,11 @@ class SearchMusicViewController: UIViewController {
         searchController.searchBar.placeholder = NSLocalizedString("h_search", "")
         searchController.searchBar.barTintColor = Theme.shared.color_Navigator()
         searchController.searchBar.tintColor = UIColor.white
-        searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        if #available(iOS 13.0, *) {
+            UIBarButtonItem.appearance(whenContainedInInstancesOf: [UISearchBar.self]).title = NSLocalizedString("h_cancel", "")
+        } else {
+            searchController.searchBar.setValue(NSLocalizedString("h_cancel", ""), forKey: "_cancelButtonText")
+        }
         searchController.searchBar.scopeButtonTitles = [HOST_NHAC_CUA_TUI, HOST_MP3_ZING]
         searchController.searchBar.delegate = self
         tableView.tableHeaderView = searchController.searchBar

@@ -52,7 +52,6 @@ class HomeViewController: BaseViewController {
             }
         }
         
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "home_chat_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "home_chat_screen", screenClass: classForCoder.description())
     }
     
@@ -266,11 +265,11 @@ class HomeViewController: BaseViewController {
 
     @objc func actLeftMenu(btn: UIBarButtonItem) {
         self.revealViewController().revealToggle(btn)
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "left_menu", label: "left_menu_button", value: nil)
+        AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "left_menu", label: "left_menu_button")
     }
     
     @objc func actRightMenu(btn: UIBarButtonItem) {
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "right_menu", label: "right_menu_button", value: nil)
+        AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "right_menu", label: "right_menu_button")
         self.revealViewController().rightRevealToggle(btn)
     }
     
@@ -424,7 +423,6 @@ extension HomeViewController: ContactCellDelegate {
             }
         })
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home", action: "chat", label: "start_chat", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home", action: "chat", label: "start_chat")
     }
     
@@ -474,7 +472,7 @@ extension HomeViewController: ContactCellDelegate {
             if error == nil {
                 self.ref.child("Users/\(user.id)/conversations/\(currentUID)").setValue(newRoomChatRef.key)
                 self.ref.child("Users/\(currentUID)/conversations/\(user.id)").setValue(newRoomChatRef.key)
-                self.pushToChatDetails(roomKey: newRoomChatRef.key, receiverUser: user)
+                self.pushToChatDetails(roomKey: newRoomChatRef.key!, receiverUser: user)
             }
         }
     }

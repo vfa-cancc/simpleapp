@@ -60,7 +60,6 @@ class MessageViewController: BaseViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AnalyticsHelper.shared.setGoogleAnalytic(name: kGAIScreenName, value: "message_screen")
         AnalyticsHelper.shared.setFirebaseAnalytic(screenName: "message_screen", screenClass: classForCoder.description())
     }
     
@@ -248,14 +247,12 @@ class MessageViewController: BaseViewController {
     
     // MARK:- Action method
     @objc func actBack(btn: UIButton) {
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "back", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "back")
         
         _ = navigationController?.popViewController(animated: true)
     }
     
     @objc func actWarning(btn: UIButton) {
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "warning", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "warning")
         if let user = self.receiverUser {
             EZAlertController.alert(kAppName, message: "\(NSLocalizedString("h_sms_block_user", "")) \(user.display_name)", buttons: [NSLocalizedString("h_cancel", ""), NSLocalizedString("h_block", "")]) { (alertAction, position) -> Void in
@@ -264,15 +261,12 @@ class MessageViewController: BaseViewController {
                         print("Cancel")
                     #endif
                     
-                    AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "cancel_block", value: nil)
                     AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "cancel_block")
                 } else if position == 1 {
                     if let user = self.receiverUser {
                         self.updateBlockUser(blockID: user.id)
-                        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "touch_block", value: nil)
                         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "touch_block")
                     }
-                    
                 }
             }
         }
@@ -310,14 +304,12 @@ class MessageViewController: BaseViewController {
         self.tvInputMessage.text = ""
         self.cstTVMessageOffsetHeight.constant = 35
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "send_message", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "send_message")
     }
     
     @IBAction func actAttach(_ sender: Any) {
         showAlertPhoto()
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "choose_image", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "choose_image")
     }
     
@@ -345,7 +337,7 @@ class MessageViewController: BaseViewController {
         self.ref.child("Conversations/\(conversationKey)/lastMessage").setValue(lastMsg)
         self.ref.child("Conversations/\(conversationKey)/lastTimeUpdate").setValue(create_date)
         
-        PushHelper.shared.pushHistory(receive_user: receive_user, send_id: self.currentuserID, room_id: conversationKey, message_id: newMsgRef.key, push_type: TYPE_PUSH_CHAT, message_content: content) { (error) in
+        PushHelper.shared.pushHistory(receive_user: receive_user, send_id: self.currentuserID, room_id: conversationKey, message_id: newMsgRef.key!, push_type: TYPE_PUSH_CHAT, message_content: content) { (error) in
             if error != nil {
                 #if DEBUG
                     print("[Push] - \(String(describing: error?.localizedDescription))")
@@ -362,7 +354,6 @@ class MessageViewController: BaseViewController {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let openCamera = UIAlertAction(title: NSLocalizedString("h_take_a_new_photo", ""), style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "take_a_new_photo", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "take_a_new_photo")
                 
                 self.imgPickerVC.sourceType = .camera
@@ -372,7 +363,6 @@ class MessageViewController: BaseViewController {
             
             let openPhotoLibrary = UIAlertAction(title: NSLocalizedString("h_choose_from_library", ""), style: .default, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "choose_from_library", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "choose_from_library")
                 
                 self.imgPickerVC.sourceType = .photoLibrary
@@ -383,7 +373,6 @@ class MessageViewController: BaseViewController {
             
             let cancel = UIAlertAction(title: NSLocalizedString("h_cancel", ""), style: .cancel, handler: { (_) in
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "cancel", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "cancel")
             })
             self.showAlertSheet(title: kAppName, msg: NSLocalizedString("h_please_choose", ""), actions: [cancel, openPhotoLibrary, openCamera])
@@ -541,7 +530,6 @@ extension MessageViewController: UITableViewDataSource, UITableViewDelegate {
             if hasNextData {
                 loadData(lastKey: lastMessageKey)
                 
-                AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "chat", label: "load_more_message", value: nil)
                 AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "chat", label: "load_more_message")
             } else {
                 refreshControl.endRefreshing()
@@ -564,7 +552,6 @@ extension MessageViewController: PhotoChatCellDelegate {
             self.navigationController?.pushViewController(detailImageVC, animated: true)
         }
         
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "chat_and_group", action: "chat", label: "detail_image", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "chat_and_group", action: "chat", label: "detail_image")
     }
 }
@@ -585,7 +572,6 @@ extension MessageViewController: ChatCellDelegate {
                             print("Cancel")
                         #endif
                         
-                        AnalyticsHelper.shared.sendGoogleAnalytic(category: "chat_and_group", action: "delete_message", label: "touch_cancel", value: nil)
                         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "chat_and_group", action: "delete_message", label: "touch_cancel")
                     } else if position == 1 {
                         if message.message_type == .Photo {
@@ -602,7 +588,6 @@ extension MessageViewController: ChatCellDelegate {
                         }
                         self.messageChannel.child(message.message_id).removeValue()
                         
-                        AnalyticsHelper.shared.sendGoogleAnalytic(category: "chat_and_group", action: "delete_message", label: "touch_delete", value: nil)
                         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "chat_and_group", action: "delete_message", label: "touch_delete")
                     }
                 }
@@ -703,7 +688,6 @@ extension MessageViewController: UINavigationControllerDelegate, UIImagePickerCo
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        AnalyticsHelper.shared.sendGoogleAnalytic(category: "home_and_group", action: "image_picker", label: "cancel", value: nil)
         AnalyticsHelper.shared.sendFirebaseAnalytic(event: AnalyticsEventSelectContent, category: "home_and_group", action: "image_picker", label: "cancel")
         imgPickerVC.dismiss(animated: true, completion: nil)
     }
