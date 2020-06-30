@@ -36,7 +36,7 @@ class HuCaChat_DevUITests: XCTestCase {
         self.testHomeVC()
         self.testMusicVC()
         self.testMapVC()
-//        self.testMovieVC()
+        self.testMovieVC()
     }
     
     /// Handle test Login view controller
@@ -100,12 +100,12 @@ class HuCaChat_DevUITests: XCTestCase {
         app.navigationBars["navigationBar"].buttons["leftBar"].tap()
         
         /// Move to Group view controller
-        let btnGroup = app.buttons["btnCalendarBar"]
+        let btnGroup = app.buttons["btnGroupBar"]
         XCTAssert(btnGroup.exists)
         btnGroup.tap()
         
         /// Move to Notification view controller
-        let btnNotification = app.buttons["btnAlartBar"]
+        let btnNotification = app.buttons["btnNotificationBar"]
         XCTAssert(btnNotification.exists)
         btnNotification.tap()
         
@@ -122,7 +122,7 @@ class HuCaChat_DevUITests: XCTestCase {
     
     /// Handle test Music view controller
     private func testMusicVC() {
-        let btnMusic = app.buttons["btnCameraBar"]
+        let btnMusic = app.buttons["btnMusicBar"]
         XCTAssert(btnMusic.exists)
         btnMusic.tap()
         let sldTime = app.sliders["sldTime"]
@@ -145,7 +145,7 @@ class HuCaChat_DevUITests: XCTestCase {
         let btnCenter = app.buttons["btnCenterBar"]
         XCTAssert(btnCenter.exists)
         btnCenter.tap()
-        let btnMap = app.buttons["btnVideoBar"]
+        let btnMap = app.buttons["btnMapBar"]
         XCTAssert(btnMap.exists)
         btnMap.tap()
         app.navigationBars["navigationBar"].buttons["leftBar"].tap()
@@ -157,7 +157,7 @@ class HuCaChat_DevUITests: XCTestCase {
         let btnCenter = app.buttons["btnCenterBar"]
         XCTAssert(btnCenter.exists)
         btnCenter.tap()
-        let btnMovie = app.buttons["btnCheckInBar"]
+        let btnMovie = app.buttons["btnMovieBar"]
         XCTAssert(btnMovie.exists)
         btnMovie.tap()
         let tableView = app.tables.element
