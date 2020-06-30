@@ -285,7 +285,7 @@ extension HomeViewController: BottomMenuViewDelegate {
         isShowAds = false
     }
     
-    func didSelectedBtnCalendar(_: BottomMenuView!) {
+    func didSelectedBtnGroup(_: BottomMenuView!) {
         isShowAds = false
         let groupVC = self.storyboard?.instantiateViewController(withIdentifier: "GroupVC") as! GroupViewController
         self.navigationController?.pushViewController(groupVC, animated: false)
@@ -295,7 +295,7 @@ extension HomeViewController: BottomMenuViewDelegate {
         isShowAds = false
     }
     
-    func didSelectedBtnAlarm(_: BottomMenuView!) {
+    func didSelectedBtnNotification(_: BottomMenuView!) {
         isShowAds = false
         let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "NotificationVC") as! NotificationViewController
         self.navigationController?.pushViewController(notificationVC, animated: false)
@@ -313,19 +313,19 @@ extension HomeViewController: BottomMenuViewDelegate {
         self.navigationController?.pushViewController(contactVC, animated: true)
     }
     
-    func didSelectedBtnVideo(_: BottomMenuView!) {
+    func didSelectedBtnMap(_: BottomMenuView!) {
         isShowAds = false
         let mapVC = self.storyboard?.instantiateViewController(withIdentifier: "MapVC") as! MapViewController
         self.navigationController?.pushViewController(mapVC, animated: true)
     }
     
-    func didSelectedBtnCamera(_: BottomMenuView!) {
+    func didSelectedBtnMusic(_: BottomMenuView!) {
         isShowAds = false
         let musicVC = self.storyboard?.instantiateViewController(withIdentifier: "MusicVC") as! MusicViewController
         self.navigationController?.pushViewController(musicVC, animated: true)
     }
     
-    func didSelectedBtnCheckIn(_: BottomMenuView!) {
+    func didSelectedBtnMovie(_: BottomMenuView!) {
         isShowAds = false
         let pageMenuVC = self.storyboard?.instantiateViewController(withIdentifier: "PageMenuVC") as! PageMenuViewController
         self.navigationController?.pushViewController(pageMenuVC, animated: true)

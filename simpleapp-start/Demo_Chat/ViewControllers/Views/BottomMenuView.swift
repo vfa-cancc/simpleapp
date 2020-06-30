@@ -11,14 +11,14 @@ import SnapKit
 
 protocol BottomMenuViewDelegate: class {
     func didSelectedBtnHome(_: BottomMenuView!)
-    func didSelectedBtnCalendar(_: BottomMenuView!)
+    func didSelectedBtnGroup(_: BottomMenuView!)
     func didSelectedBtnCenter(_: BottomMenuView!)
-    func didSelectedBtnAlarm(_: BottomMenuView!)
+    func didSelectedBtnNotification(_: BottomMenuView!)
     func didSelectedBtnSetting(_: BottomMenuView!)
     func didSelectedBtnContact(_: BottomMenuView!)
-    func didSelectedBtnVideo(_: BottomMenuView!)
-    func didSelectedBtnCamera(_: BottomMenuView!)
-    func didSelectedBtnCheckIn(_: BottomMenuView!)
+    func didSelectedBtnMap(_: BottomMenuView!)
+    func didSelectedBtnMusic(_: BottomMenuView!)
+    func didSelectedBtnMovie(_: BottomMenuView!)
     func didSelectedBtnCheckOut(_: BottomMenuView!)
 }
 
@@ -55,9 +55,9 @@ class BottomMenuView: UIView {
         return btn
     }()
     
-    lazy var btnCalendar: UIButton = {
+    lazy var btnGroup: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(self.tappedBtnCalendar(btn:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.tappedBtnGroup(btn:)), for: .touchUpInside)
         btn.setImage(#imageLiteral(resourceName: "tabbar_group_off"), for: .normal)
         btn.setImage(#imageLiteral(resourceName: "tabbar_group_on"), for: .selected)
         
@@ -75,9 +75,9 @@ class BottomMenuView: UIView {
         return btn
     }()
     
-    lazy var btnAlart: UIButton = {
+    lazy var btnNotification: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(self.tappedBtnAlart(btn:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.tappedBtnNotification(btn:)), for: .touchUpInside)
         btn.setImage(#imageLiteral(resourceName: "tabbar_notification_off"), for: .normal)
         btn.setImage(#imageLiteral(resourceName: "tabbar_notification_on"), for: .selected)
         
@@ -117,9 +117,9 @@ class BottomMenuView: UIView {
         return btn
     }()
     
-    lazy var btnVideo: UIButton = {
+    lazy var btnMap: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(self.tappedBtnVideo(btn:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.tappedBtnMap(btn:)), for: .touchUpInside)
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
@@ -127,9 +127,9 @@ class BottomMenuView: UIView {
         return btn
     }()
     
-    lazy var btnCamera: UIButton = {
+    lazy var btnMusic: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(self.tappedBtnCamera(btn:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.tappedBtnMusic(btn:)), for: .touchUpInside)
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
@@ -137,9 +137,9 @@ class BottomMenuView: UIView {
         return btn
     }()
     
-    lazy var btnCheckIn: UIButton = {
+    lazy var btnMovie: UIButton = {
         let btn = UIButton()
-        btn.addTarget(self, action: #selector(self.tappedBtnCheckIn(btn:)), for: .touchUpInside)
+        btn.addTarget(self, action: #selector(self.tappedBtnMovie(btn:)), for: .touchUpInside)
         let image = UIView.filledImage(from: #imageLiteral(resourceName: "icon_text"), with: Theme.shared.color_Dark_App())
         btn.setImage(image, for: .normal)
         btn.setImage(image, for: .highlighted)
@@ -173,19 +173,19 @@ class BottomMenuView: UIView {
         return imgV
     }()
     
-    lazy var imgViewIconVideo: UIImageView = {
+    lazy var imgViewIconMap: UIImageView = {
         let imgV = UIImageView(image: #imageLiteral(resourceName: "iMaker"))
         
         return imgV
     }()
     
-    lazy var imgViewIconCamera: UIImageView = {
+    lazy var imgViewIconMusic: UIImageView = {
         let imgV = UIImageView(image: #imageLiteral(resourceName: "iMusic"))
         
         return imgV
     }()
     
-    lazy var imgViewIconCheckIn: UIImageView = {
+    lazy var imgViewIconMovie: UIImageView = {
         let imgV = UIImageView(image: #imageLiteral(resourceName: "iMove"))
         
         return imgV
@@ -203,8 +203,8 @@ class BottomMenuView: UIView {
     
     func clearSelectButton() {
         btnHome.isSelected = false
-        btnCalendar.isSelected = false
-        btnAlart.isSelected = false
+        btnGroup.isSelected = false
+        btnNotification.isSelected = false
         btnSetting.isSelected = false
     }
     
@@ -216,8 +216,8 @@ class BottomMenuView: UIView {
         self.delegate?.didSelectedBtnHome(self)
     }
     
-    @objc func tappedBtnCalendar(btn: UIButton) {
-        self.delegate?.didSelectedBtnCalendar(self)
+    @objc func tappedBtnGroup(btn: UIButton) {
+        self.delegate?.didSelectedBtnGroup(self)
     }
     
     @objc func tappedBtnCenter(btn: UIButton) {
@@ -231,8 +231,8 @@ class BottomMenuView: UIView {
         self.delegate?.didSelectedBtnCenter(self)
     }
     
-    @objc func tappedBtnAlart(btn: UIButton) {
-        self.delegate?.didSelectedBtnAlarm(self)
+    @objc func tappedBtnNotification(btn: UIButton) {
+        self.delegate?.didSelectedBtnNotification(self)
     }
     
     @objc func tappedBtnSetting(btn: UIButton) {
@@ -247,24 +247,24 @@ class BottomMenuView: UIView {
         }
     }
     
-    @objc func tappedBtnVideo(btn: UIButton) {
-        self.delegate?.didSelectedBtnVideo(self)
+    @objc func tappedBtnMap(btn: UIButton) {
+        self.delegate?.didSelectedBtnMap(self)
         if isShowSubButton {
             tappedScreen()
             return
         }
     }
     
-    @objc func tappedBtnCamera(btn: UIButton) {
-        self.delegate?.didSelectedBtnCamera(self)
+    @objc func tappedBtnMusic(btn: UIButton) {
+        self.delegate?.didSelectedBtnMusic(self)
         if isShowSubButton {
             tappedScreen()
             return
         }
     }
     
-    @objc func tappedBtnCheckIn(btn: UIButton) {
-        self.delegate?.didSelectedBtnCheckIn(self)
+    @objc func tappedBtnMovie(btn: UIButton) {
+        self.delegate?.didSelectedBtnMovie(self)
         if isShowSubButton {
             tappedScreen()
             return
@@ -289,21 +289,21 @@ class BottomMenuView: UIView {
     func setupViewsAndLayout() {
         self.addSubview(viewBackground)
         self.viewBackground.addSubview(btnHome)
-        self.viewBackground.addSubview(btnCalendar)
-        self.viewBackground.addSubview(btnAlart)
+        self.viewBackground.addSubview(btnGroup)
+        self.viewBackground.addSubview(btnNotification)
         self.viewBackground.addSubview(btnSetting)
         
         self.addSubview(viewBlueBackground)
         self.addSubview(imgViewEclipseBackground)
         self.addSubview(btnContact)
-        self.addSubview(btnVideo)
-        self.addSubview(btnCamera)
-        self.addSubview(btnCheckIn)
+        self.addSubview(btnMap)
+        self.addSubview(btnMusic)
+        self.addSubview(btnMovie)
         self.addSubview(btnCheckOut)
         self.addSubview(btnCenter)
         self.imgViewEclipseBackground.isHidden = true
         
-        let items = [(btnContact, imgViewIconText), (btnVideo, imgViewIconVideo), (btnCamera, imgViewIconCamera), (btnCheckIn, imgViewIconCheckIn), (btnCheckOut, imgViewIconCheckOut)]
+        let items = [(btnContact, imgViewIconText), (btnMap, imgViewIconMap), (btnMusic, imgViewIconMusic), (btnMovie, imgViewIconMovie), (btnCheckOut, imgViewIconCheckOut)]
         for (btn, img) in items {
             btn.addSubview(img)
             img.snp.makeConstraints({ (make) in
@@ -349,7 +349,7 @@ class BottomMenuView: UIView {
             make.height.equalTo(50)
         }
         
-        let arr = [btnContact, btnVideo, btnCamera, btnCheckIn, btnCheckOut];
+        let arr = [btnContact, btnMap, btnMusic, btnMovie, btnCheckOut];
         for btn in arr {
             btn.snp.makeConstraints({ (make) in
                 make.centerX.equalTo(btnCenter)
@@ -367,14 +367,14 @@ class BottomMenuView: UIView {
             make.centerX.equalTo(btnCenter.snp.leading).offset(-3*onePartWidth)
         }
         
-        self.btnCalendar.snp.makeConstraints { (make) in
+        self.btnGroup.snp.makeConstraints { (make) in
             make.bottom.equalToSuperview().offset(-1)
             make.width.equalTo(55)
             make.height.equalToSuperview()
             make.centerX.equalTo(btnCenter.snp.leading).offset(-1.2*onePartWidth)
         }
         
-        self.btnAlart.snp.makeConstraints { (make) in
+        self.btnNotification.snp.makeConstraints { (make) in
             make.bottom.equalToSuperview().offset(-1)
             make.width.equalTo(55)
             make.height.equalToSuperview()
@@ -388,7 +388,7 @@ class BottomMenuView: UIView {
             make.centerX.equalTo(btnCenter.snp.trailing).offset(3*onePartWidth)
         }
         
-        let arrButtons = [btnHome, btnCalendar, btnAlart, btnSetting]
+        let arrButtons = [btnHome, btnGroup, btnNotification, btnSetting]
         for btn in arrButtons {
             let view = UIView()
             view.backgroundColor = Theme.shared.color_App()
@@ -446,14 +446,14 @@ class BottomMenuView: UIView {
                     make.centerY.equalTo(self.btnCenter).offset(-delta)
                     make.centerX.equalTo(self.btnCenter)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnVideo.snp.width)
+                    make.height.equalTo(self.btnMap.snp.width)
                 })
                 
                 self.itemsArr[2].snp.updateConstraints({ (make) in
                     make.centerY.equalTo(self.btnCenter)
                     make.centerX.equalTo(self.btnCenter).offset(delta)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnCamera.snp.width)
+                    make.height.equalTo(self.btnMusic.snp.width)
                 })
                 break
                 
@@ -469,21 +469,21 @@ class BottomMenuView: UIView {
                     make.centerY.equalTo(self.btnCenter).offset(-60)
                     make.centerX.equalTo(self.btnCenter).offset(-delta/2)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnVideo.snp.width)
+                    make.height.equalTo(self.btnMap.snp.width)
                 })
                 
                 self.itemsArr[2].snp.updateConstraints({ (make) in
                     make.centerY.equalTo(self.btnCenter).offset(-60)
                     make.centerX.equalTo(self.btnCenter).offset(delta/2)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnCamera.snp.width)
+                    make.height.equalTo(self.btnMusic.snp.width)
                 })
                 
                 self.itemsArr[3].snp.updateConstraints({ (make) in
                     make.centerY.equalTo(self.btnCenter)
                     make.centerX.equalTo(self.btnCenter).offset(delta)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnCheckIn.snp.width)
+                    make.height.equalTo(self.btnMovie.snp.width)
                 })
                 break
                 
@@ -499,21 +499,21 @@ class BottomMenuView: UIView {
                     make.centerY.equalTo(self.btnCenter).offset(-56.56)
                     make.centerX.equalTo(self.btnCenter).offset(-56.56)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnVideo.snp.width)
+                    make.height.equalTo(self.btnMap.snp.width)
                 })
                 
                 self.itemsArr[2].snp.updateConstraints({ (make) in
                     make.centerY.equalTo(self.btnCenter).offset(-delta)
                     make.centerX.equalTo(self.btnCenter)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnCamera.snp.width)
+                    make.height.equalTo(self.btnMusic.snp.width)
                 })
                 
                 self.itemsArr[3].snp.updateConstraints({ (make) in
                     make.centerY.equalTo(self.btnCenter).offset(-56.56)
                     make.centerX.equalTo(self.btnCenter).offset(56.56)
                     make.width.equalTo(60)
-                    make.height.equalTo(self.btnCheckIn.snp.width)
+                    make.height.equalTo(self.btnMovie.snp.width)
                 })
                 
                 self.itemsArr[4].snp.updateConstraints({ (make) in
@@ -537,7 +537,7 @@ class BottomMenuView: UIView {
         viewBlueBackground.alpha = 1
         UIView.animate(withDuration: 0.35, animations: { 
             self.viewBlueBackground.alpha = 0
-            let arr = [self.btnContact, self.btnVideo, self.btnCamera, self.btnCheckIn, self.btnCheckOut];
+            let arr = [self.btnContact, self.btnMap, self.btnMusic, self.btnMovie, self.btnCheckOut];
             for btn in arr {
                 btn.snp.updateConstraints({ (make) in
                     make.centerX.equalTo(self.btnCenter)

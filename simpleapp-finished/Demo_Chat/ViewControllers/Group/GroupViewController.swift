@@ -75,7 +75,7 @@ class GroupViewController: BaseViewController {
         }
         
         bottomMenuView.clearSelectButton()
-        bottomMenuView.btnCalendar.isSelected = true
+        bottomMenuView.btnGroup.isSelected = true
         bottomMenuView.currentIndex = 1
         
         tableView.dataSource = self
@@ -150,7 +150,7 @@ extension GroupViewController: BottomMenuViewDelegate {
         let _ = self.navigationController?.popToRootViewController(animated: false)
     }
     
-    func didSelectedBtnCalendar(_: BottomMenuView!) {
+    func didSelectedBtnGroup(_: BottomMenuView!) {
         
     }
     
@@ -158,7 +158,7 @@ extension GroupViewController: BottomMenuViewDelegate {
         
     }
     
-    func didSelectedBtnAlarm(_: BottomMenuView!) {
+    func didSelectedBtnNotification(_: BottomMenuView!) {
         let notificationVC = self.storyboard?.instantiateViewController(withIdentifier: "NotificationVC") as! NotificationViewController
         self.navigationController?.pushViewController(notificationVC, animated: false)
     }
@@ -173,17 +173,17 @@ extension GroupViewController: BottomMenuViewDelegate {
         self.navigationController?.pushViewController(contactVC, animated: true)
     }
     
-    func didSelectedBtnVideo(_: BottomMenuView!) {
+    func didSelectedBtnMap(_: BottomMenuView!) {
         let mapVC = self.storyboard?.instantiateViewController(withIdentifier: "MapVC") as! MapViewController
         self.navigationController?.pushViewController(mapVC, animated: true)
     }
     
-    func didSelectedBtnCamera(_: BottomMenuView!) {
+    func didSelectedBtnMusic(_: BottomMenuView!) {
         let musicVC = self.storyboard?.instantiateViewController(withIdentifier: "MusicVC") as! MusicViewController
         self.navigationController?.pushViewController(musicVC, animated: true)
     }
     
-    func didSelectedBtnCheckIn(_: BottomMenuView!) {
+    func didSelectedBtnMovie(_: BottomMenuView!) {
         let pageMenuVC = self.storyboard?.instantiateViewController(withIdentifier: "PageMenuVC") as! PageMenuViewController
         self.navigationController?.pushViewController(pageMenuVC, animated: true)
     }
