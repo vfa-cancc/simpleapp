@@ -58,6 +58,24 @@ class UIManager: NSObject {
         return screenSize.width
     }
     
+    static func topSafeArea() -> CGFloat {
+        var topPadding: CGFloat = 0
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            topPadding = window?.safeAreaInsets.top ?? 0
+        }
+        return topPadding
+    }
+    
+    static func bottomSafeArea() -> CGFloat {
+        var bottomPadding: CGFloat = 0
+        if #available(iOS 11.0, *) {
+            let window = UIApplication.shared.keyWindow
+            bottomPadding = window?.safeAreaInsets.bottom ?? 0
+        }
+        return bottomPadding
+    }
+    
     func popAllViewControllerAndShowLoginViewController() {
         let loginVC  = mainStoryBoard.instantiateViewController(withIdentifier: "LoginVC") as! LoginViewController
         

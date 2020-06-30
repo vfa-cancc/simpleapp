@@ -23,7 +23,7 @@ struct GoogleAdsUnitID {
 
 struct BannerViewSize {
     static var screenWidth: CGFloat = UIScreen.main.bounds.size.width
-    static var screenHeight: CGFloat = 64
+    static var screenHeight: CGFloat = UIManager.topSafeArea() > 0 ? (64 + UIManager.topSafeArea() - 20) : 64
     static var height: CGFloat = CGFloat(UIDevice.current.userInterfaceIdiom == .pad ? 90 : 50)
 }
 
