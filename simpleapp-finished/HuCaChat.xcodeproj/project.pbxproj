@@ -275,6 +275,7 @@
 		48FE8B4921037FF600AA3DD3 /* HuCaChat_Dev-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 485603101F24F60700A62606 /* HuCaChat_Dev-Info.plist */; };
 		48FF44E21F413DAD00A2852A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF44E11F413DAD00A2852A /* MovieCell.swift */; };
 		48FF44E31F413DAD00A2852A /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48FF44E11F413DAD00A2852A /* MovieCell.swift */; };
+		540AC53D24AA67CA00090B89 /* MovieTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 540AC53C24AA67CA00090B89 /* MovieTestCase.swift */; };
 		54874F382499B823007D9CBB /* HuCaChat_DevTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54874F372499B823007D9CBB /* HuCaChat_DevTests.swift */; };
 		54874F462499B8C0007D9CBB /* HuCaChat_ReleaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54874F452499B8C0007D9CBB /* HuCaChat_ReleaseTests.swift */; };
 		54874F502499C3D0007D9CBB /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54874F4E2499C3D0007D9CBB /* MenuViewController.xib */; };
@@ -480,6 +481,7 @@
 		48F4BB931F21036B00A29AD7 /* NotificationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationHelper.swift; sourceTree = "<group>"; };
 		48FF44E11F413DAD00A2852A /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		4C78EDD7EC86ACA99CE8ACC5 /* Pods-HuCaChat_DevTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuCaChat_DevTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuCaChat_DevTests/Pods-HuCaChat_DevTests.debug.xcconfig"; sourceTree = "<group>"; };
+		540AC53C24AA67CA00090B89 /* MovieTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTestCase.swift; sourceTree = "<group>"; };
 		54874F352499B823007D9CBB /* HuCaChat_DevTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuCaChat_DevTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		54874F372499B823007D9CBB /* HuCaChat_DevTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuCaChat_DevTests.swift; sourceTree = "<group>"; };
 		54874F392499B823007D9CBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -1038,6 +1040,7 @@
 			children = (
 				54874F372499B823007D9CBB /* HuCaChat_DevTests.swift */,
 				54874F392499B823007D9CBB /* Info.plist */,
+				540AC53C24AA67CA00090B89 /* MovieTestCase.swift */,
 			);
 			path = HuCaChat_DevTests;
 			sourceTree = "<group>";
@@ -2032,6 +2035,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				540AC53D24AA67CA00090B89 /* MovieTestCase.swift in Sources */,
 				54874F382499B823007D9CBB /* HuCaChat_DevTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
