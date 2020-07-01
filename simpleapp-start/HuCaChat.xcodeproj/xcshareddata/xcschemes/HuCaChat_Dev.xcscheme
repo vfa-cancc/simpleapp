@@ -28,6 +28,27 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "4839685E24AAEF5E00C77B41"
+               BuildableName = "HuCaChat_DevUITests.xctest"
+               BlueprintName = "HuCaChat_DevUITests"
+               ReferencedContainer = "container:HuCaChat.xcodeproj">
+            </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testHomeScreen()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testLaunchPerformance()">
+               </Test>
+               <Test
+                  Identifier = "HuCaChat_DevUITests/testLogin()">
+               </Test>
+            </SkippedTests>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

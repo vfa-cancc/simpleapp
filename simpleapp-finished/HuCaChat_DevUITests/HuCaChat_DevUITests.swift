@@ -113,6 +113,15 @@ class HuCaChat_DevUITests: XCTestCase {
         let btnSetting = app.buttons["btnSettingBar"]
         XCTAssert(btnSetting.exists)
         btnSetting.tap()
+        let btnOnlineStatus = app.buttons["btnOnlineStatus"]
+        XCTAssert(btnOnlineStatus.exists)
+        btnOnlineStatus.tap()
+        let btnDone = app.buttons["btnDone"]
+        XCTAssert(btnDone.exists)
+        btnDone.tap()
+        let switchOnPush = app.switches["switchOnPush"]
+        XCTAssert(switchOnPush.exists)
+        switchOnPush.tap()
         
         /// Touch Center button
         let btnCenter = app.buttons["btnCenterBar"]
@@ -153,7 +162,7 @@ class HuCaChat_DevUITests: XCTestCase {
     
     /// Handle test Movie view controller
     private func testMovieVC() {
-        // Touch Center button
+        /// Touch Center button
         let btnCenter = app.buttons["btnCenterBar"]
         XCTAssert(btnCenter.exists)
         btnCenter.tap()
@@ -161,8 +170,12 @@ class HuCaChat_DevUITests: XCTestCase {
         XCTAssert(btnMovie.exists)
         btnMovie.tap()
         let tableView = app.tables.element
-        tableView.swipeUp()
-        tableView.swipeUp()
+        XCTAssert(tableView.exists)
+//        tableView.swipeUp()
+//        tableView.swipeUp()
+        tableView.swipeDown()
+        tableView.swipeDown()
+        
     }
     
     // MARK: - Other method
