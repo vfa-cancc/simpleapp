@@ -109,6 +109,7 @@
 		482D1DF424A9E09600CC5D6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 480880692064AFCB008DD271 /* Main.storyboard */; };
 		482D1DF524A9E09B00CC5D6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4808806B2064AFCB008DD271 /* LaunchScreen.storyboard */; };
 		4839686224AAEF5E00C77B41 /* HuCaChat_DevUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839686124AAEF5E00C77B41 /* HuCaChat_DevUITests.swift */; };
+		4839686C24AC365B00C77B41 /* HomeUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4839686B24AC365B00C77B41 /* HomeUITest.swift */; };
 		483A34C91F2AD695003C7747 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34C81F2AD695003C7747 /* PushModel.swift */; };
 		483A34CA1F2AD695003C7747 /* PushModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34C81F2AD695003C7747 /* PushModel.swift */; };
 		483A34CC1F2B0E0B003C7747 /* MainDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 483A34CB1F2B0E0B003C7747 /* MainDB.swift */; };
@@ -379,6 +380,7 @@
 		4839685F24AAEF5E00C77B41 /* HuCaChat_DevUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuCaChat_DevUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4839686124AAEF5E00C77B41 /* HuCaChat_DevUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuCaChat_DevUITests.swift; sourceTree = "<group>"; };
 		4839686324AAEF5E00C77B41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4839686B24AC365B00C77B41 /* HomeUITest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeUITest.swift; sourceTree = "<group>"; };
 		483A34C81F2AD695003C7747 /* PushModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushModel.swift; sourceTree = "<group>"; };
 		483A34CB1F2B0E0B003C7747 /* MainDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDB.swift; sourceTree = "<group>"; };
 		484651F61F1F457300033AB8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -754,6 +756,7 @@
 			children = (
 				4839686124AAEF5E00C77B41 /* HuCaChat_DevUITests.swift */,
 				4839686324AAEF5E00C77B41 /* Info.plist */,
+				4839686B24AC365B00C77B41 /* HomeUITest.swift */,
 			);
 			path = HuCaChat_DevUITests;
 			sourceTree = "<group>";
@@ -1671,6 +1674,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4839686C24AC365B00C77B41 /* HomeUITest.swift in Sources */,
 				4839686224AAEF5E00C77B41 /* HuCaChat_DevUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

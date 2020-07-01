@@ -12,6 +12,7 @@ class HuCaChat_DevUITests: XCTestCase {
 
     let app = XCUIApplication()
     static let kUserInfo = "UI-TestingKey_kUserInfo"
+    let homeUITest = HomeUITest()
     
     // MARK: - Setup for UI Test
     override func setUp() {
@@ -24,7 +25,9 @@ class HuCaChat_DevUITests: XCTestCase {
     /// Test all app
     func testAllApp() {
         self.testLogin()
-        self.testHomeScreen()
+        homeUITest.testHomeScreen()
+        self.testLogin()
+        self.testMoveToMusicScreen()
     }
     
     /// test login screen
@@ -45,21 +48,33 @@ class HuCaChat_DevUITests: XCTestCase {
         btnLogin.tap()
         
         /// Logout
-        let leftBar: XCUIElement = app.navigationBars.buttons.element(boundBy: 0)
-        self.waitForElementToAppear(leftBar) /// Wait for element load finished
-        leftBar.tap()
-        
-        let btnLogout = app.buttons["btnLogout"]
-        XCTAssert(btnLogout.exists)
-        btnLogout.tap()
+//        let leftBar: XCUIElement = app.navigationBars.buttons.element(boundBy: 0)
+//        self.waitForElementToAppear(leftBar) /// Wait for element load finished
+//        leftBar.tap()
+//        
+//        let btnLogout = app.buttons["btnLogout"]
+//        XCTAssert(btnLogout.exists)
+//        btnLogout.tap()
     }
     
-    private func testHomeScreen() {
-//        let tableView = app.tables.containing(.table, identifier: "tableView")
-//        XCTAssertTrue(tableView.cells.count > 2)
-//        let cell = tableView.cells.element(boundBy: 2)
-//        self.waitForElementToAppear(tableView)
-//        cell.tap()
+    func testMoveToMusicScreen() {
+        let btnCenter = app.buttons["btnCenterBar"]
+        self.waitForElementToAppear(btnCenter)
+//        XCTAssert(btnCenter.exists)
+        btnCenter.tap()
+        
+        let btnMusic = app.buttons["btnMusicBar"]
+        XCTAssert(btnMusic.exists)
+        btnMusic.tap()
+        
+        let sldTime = app.sliders["sldTime"]
+        XCTAssert(sldTime.exists)
+        sldTime.adjust(toNormalizedSliderPosition: 0.4)
+        
+        let btnPlay = app.buttons["btnPlay"]
+        XCTAssert(btnPlay.exists)
+        btnPlay.tap()
+        
     }
     
     override func tearDown() {
